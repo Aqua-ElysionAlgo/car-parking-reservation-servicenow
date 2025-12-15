@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1869632_car_pa_0.car_parking_reservation_v2_user" name="x_1869632_car_pa_0.car_parking_reservation_v2_user">09552c968321b6100e72b1b6feaad35e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-03 09:04:45</sys_created_on>
+        <sys_id>cd552c968321b6100e72b1b6feaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>09552c968321b6100e72b1b6feaad35e</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_embedded_help_role_cd552c968321b6100e72b1b6feaad361</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-03 09:04:45</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

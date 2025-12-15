@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="632502c28375b2100e72b1b6feaad3d3" sys_domain="global" table="x_1869632_car_pa_0_car_parking_reservation_v2" version="3" view="cpr_user_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>10b542068375b2100e72b1b6feaad3ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>9cb542068375b2100e72b1b6feaad3ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_status</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>1cb542068375b2100e72b1b6feaad3cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>98b542068375b2100e72b1b6feaad3cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_requester_name</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>18b542068375b2100e72b1b6feaad3cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>94b542068375b2100e72b1b6feaad3ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_requester_phone</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>14b542068375b2100e72b1b6feaad3cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_car_type</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>90b542068375b2100e72b1b6feaad3d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>d4b542068375b2100e72b1b6feaad3dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_requester_email</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>54b542068375b2100e72b1b6feaad3de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_vehicle_reg_no</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>d0b542068375b2100e72b1b6feaad3df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>50b542068375b2100e72b1b6feaad3e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_location</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>dcb542068375b2100e72b1b6feaad3e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>5cb542068375b2100e72b1b6feaad3e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_start_datetime</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>d8b542068375b2100e72b1b6feaad3e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_duration_hours</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:58</sys_created_on>
+            <sys_id>58b542068375b2100e72b1b6feaad3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:59</sys_created_on>
+            <sys_id>d4b542068375b2100e72b1b6feaad3e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_end_datetime</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:59</sys_created_on>
+            <sys_id>54b542068375b2100e72b1b6feaad3e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_total_fee</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:59</sys_created_on>
+            <sys_id>d0b542068375b2100e72b1b6feaad3e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_reject_reason</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:59</sys_created_on>
+            <sys_id>50b542068375b2100e72b1b6feaad3e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_staff_notes</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:42:59</sys_created_on>
+            <sys_id>dcb542068375b2100e72b1b6feaad3e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">632502c28375b2100e72b1b6feaad3d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:42:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 07:40:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>632502c28375b2100e72b1b6feaad3d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1869632_car_pa_0_car_parking_reservation_v2</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+            <sys_update_name>sys_ui_section_632502c28375b2100e72b1b6feaad3d3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 07:40:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="CPR User View" name="cpr_user_view">ef2502c28375b2100e72b1b6feaad388</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

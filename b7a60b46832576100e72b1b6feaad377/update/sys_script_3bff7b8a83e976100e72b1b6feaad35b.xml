@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1869632_car_pa_0_car_parking_reservation_v2</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CPR - Calculate parking fee</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    if (!current.cpr_start_datetime || !current.cpr_end_datetime) {
+        return;
+    }
+
+    var start = new GlideDateTime(current.cpr_start_datetime);
+    var end   = new GlideDateTime(current.cpr_end_datetime);
+
+    if (end.getNumericValue() <= start.getNumericValue()) {
+        gs.addErrorMessage('End Date/Time ต้องมากกว่า Start Date/Time');
+        current.setAbortAction(true);
+        return;
+    }
+
+    // ฟังก์ชันคิดเงิน "ต่อวัน"
+    function calcFeeForDay(hours) {
+        if (hours <= 0) return 0;
+        if (hours > 8) return 200;
+
+        var fee = 10; // ชั่วโมงแรก
+
+        if (hours > 1) {
+            fee += (Math.min(hours, 4) - 1) * 15;
+        }
+        if (hours > 4) {
+            fee += (Math.min(hours, 8) - 4) * 20;
+        }
+        return fee;
+    }
+
+    var totalFee = 0;
+    var totalHours = 0;
+
+    var cur = new GlideDateTime(start);
+
+    while (cur.getNumericValue() < end.getNumericValue()) {
+
+        // สิ้นสุดของวันนั้น (23:59:59)
+        var endOfDay = new GlideDateTime(cur);
+        endOfDay.setDisplayValue(
+            cur.getLocalDate().getByFormat('yyyy-MM-dd') + ' 23:59:59'
+        );
+
+        var sliceEnd = endOfDay;
+        if (endOfDay.getNumericValue() > end.getNumericValue()) {
+            sliceEnd = end;
+        }
+
+        var diffMin = (sliceEnd.getNumericValue() - cur.getNumericValue()) / (1000 * 60);
+        var hours = Math.ceil(diffMin / 60);
+
+        totalHours += hours;
+        totalFee   += calcFeeForDay(hours);
+
+        // ขยับไปวันถัดไป 00:00
+        cur = new GlideDateTime(sliceEnd);
+        cur.addSeconds(1);
+    }
+
+    current.cpr_duration_hours = totalHours;
+    current.cpr_total_fee = totalFee;
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-03 06:22:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3bff7b8a83e976100e72b1b6feaad35b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CPR - Calculate parking fee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_3bff7b8a83e976100e72b1b6feaad35b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 02:18:18</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=3bff7b8a83e976100e72b1b6feaad35b"/>
+</record_update>

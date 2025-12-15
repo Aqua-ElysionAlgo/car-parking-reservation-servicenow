@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=427737000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>cpr__parking_reservation_approval</internal_name>
+        <label_cache>[{"name":"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535.__action_status__.message","label":"1 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"a70de34c-176d-4d34-88a7-5f457770e45d":["cpr_assigned_to"]},"attributes":{}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"approval","choices":[{"used":false,"label":"Not Yet Requested","image":"","reference":false,"missing":false,"rawLabel":"Not Yet Requested","selected":false,"value":"not requested","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Requested","image":"","reference":false,"missing":false,"rawLabel":"Requested","selected":false,"value":"requested","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"missing":false,"rawLabel":"Approved","selected":false,"value":"approved","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"missing":false,"rawLabel":"Rejected","selected":false,"value":"rejected","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{"6875c583-aff4-470c-90f0-bda8ca141bf0":["condition"]}},{"name":"Created_1.current.cpr_status","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_status","choices":[{"used":false,"label":"Requested","image":"","reference":false,"missing":false,"rawLabel":"Requested","selected":false,"value":"requested","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"used":false,"label":"Confirmed","image":"","reference":false,"missing":false,"rawLabel":"Confirmed","selected":false,"value":"confirmed","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"missing":false,"rawLabel":"Rejected","selected":false,"value":"rejected","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Car Parking Reservation V2 Record","reference":"x_1869632_car_pa_0_car_parking_reservation_v2","reference_display":"Car Parking Reservation V2","type":"reference","base_type":"reference","usedInstances":{"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535":["record"],"a70de34c-176d-4d34-88a7-5f457770e45d":["record"],"9c8ac6b1-3e46-484c-9704-8dbba565fdb0":["record"],"e77b59d9-9e2e-4112-b068-05a0787c2c27":["record"],"d91aa2dc-5161-4a0c-ad8c-9236f590b47b":["record"]},"attributes":{}},{"name":"Created_1.current.cpr_assignment_group","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Assignment Group (cpr_assignment_group)","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_assignment_group","usedInstances":{"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535":["approval_conditions"]}},{"name":"Created_1.current.cpr_requester_name.first_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"Created_1.current.cpr_vehicle_reg_no","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Vehicle Registration Number","reference":"","reference_display":"Vehicle Registration Number","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_vehicle_reg_no","usedInstances":{}},{"name":"Created_1.current.cpr_car_type.u_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Car Type➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_type","column_name":"u_name","usedInstances":{}},{"name":"Created_1.current.cpr_start_datetime","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Start Date/Time","reference":"","reference_display":"Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_start_datetime","usedInstances":{}},{"name":"Created_1.current.cpr_end_datetime","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛End Date/Time","reference":"","reference_display":"End Date/Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_end_datetime","usedInstances":{}},{"name":"Created_1.current.cpr_location.name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Parking Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{}},{"name":"Created_1.current.cpr_duration_hours","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Total Hours","reference":"","reference_display":"Total Hours","type":"integer","base_type":"integer","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_duration_hours","usedInstances":{}},{"name":"Created_1.current.cpr_total_fee","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Total Fee (Baht)","reference":"","reference_display":"Total Fee (Baht)","type":"currency","base_type":"currency","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_total_fee","usedInstances":{}},{"name":"Created_1.current.cpr_requester_name.last_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"Created_1.current.cpr_requester_email","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Email","reference":"","reference_display":"Requester Email","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_requester_email","usedInstances":{"e77b59d9-9e2e-4112-b068-05a0787c2c27":["ah_to"],"d91aa2dc-5161-4a0c-ad8c-9236f590b47b":["ah_to"]}}]</label_cache>
+        <master_snapshot>1792f1a283693a100e72b1b6feaad31f</master_snapshot>
+        <master_snapshot_digest/>
+        <name>CPR - Parking Reservation Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4f10a63783ad32100e72b1b6feaad3d8</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3dde12a83293a100e72b1b6feaad34a</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>CPR - Parking Reservation Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_hub_flow_b3dde12a83293a100e72b1b6feaad34a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:12</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-12-08 23:49:12">859d4f0083f1f2100e72b1b6feaad3f5</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1869632_car_pa_0_car_parking_reservation_v2">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-08 09:52:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f10a63783ad32100e72b1b6feaad3d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-08 09:52:04</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>b3dde12a83293a100e72b1b6feaad34a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-09 07:49:10</sys_created_on>
+        <sys_id>509d4f0083f1f2100e72b1b6feaad320</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:10</sys_updated_on>
+        <trigger display_value="">4f10a63783ad32100e72b1b6feaad3d8</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN509d4f0083f1f2100e72b1b6feaad320"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN77dde12a83293a100e72b1b6feaad34b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3dde12a83293a100e72b1b6feaad34a</id>
+        <name>CPR - Parking Reservation Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:10</sys_created_on>
+        <sys_id>77dde12a83293a100e72b1b6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:00:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=77dde12a83293a100e72b1b6feaad34b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN750ee92a83293a100e72b1b6feaad3a6,f10ee92a83293a100e72b1b6feaad3c7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</model>
+        <model_id>b3dde12a83293a100e72b1b6feaad34a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3dde12a83293a100e72b1b6feaad34a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:51</sys_created_on>
+        <sys_id>750ee92a83293a100e72b1b6feaad3a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:09:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=750ee92a83293a100e72b1b6feaad3a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</model>
+        <model_id>b3dde12a83293a100e72b1b6feaad34a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3dde12a83293a100e72b1b6feaad34a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:51</sys_created_on>
+        <sys_id>f10ee92a83293a100e72b1b6feaad3c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:09:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f10ee92a83293a100e72b1b6feaad3c7"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN6d0ee92a83293a100e72b1b6feaad384"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:50</sys_created_on>
+        <sys_id>6d0ee92a83293a100e72b1b6feaad384</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 02:23:18</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLeACuviat62TRQNsN63t3T4EqUBJpE0sTbkUpcRd5N871M2yLo4dK1vnJYhIijxzdObMMLn/rjPkYqZf6QvkMqz3dMolFhyxxXaDYViqYYejtZpbI+4jGYitfiVFhHs6EcF6gdcbhiQsJoiFMBgIHwv9yuzpMWIRnm/DWx92gveTbbI99Wwanp8cczycDG3L8ZBwNsgxsl/EN8qXjsAhFjGSNOBObMF7Pg3hxO3X7PUpEtof6VpttlurfVVrvRVlvsBcv7p/6OmwJUCQCt73yhRVGD3ioYmFDc82bcsyDGvcN92h7ZqWbyNsGLBhla9KTLKBth0h+Eli7mO/4KrGqMDIv+NsW6xYwQdJ2Vujp5D+C7uPDbWOYMDu4XSueHQyctJhbxVQD99tFB/pSIoznQxYtOafU/yKVkxQxGROK4xEIeyHNwqyApEhIvNV8DjLD/xIeRJdNskCD7HiCUkpqBtJHCrCCWVAvZNyEwaRSNDPbqZ3s2vnrw+L6W83M2d2M1/MbqeLm2v9OYnL+SdSO6YIMyxOGs5zoYWPFDP1AXm0dgFNTw89QTfygydpnCvzubdT+zTgPk1YqSney6fCfcXn0R+SvGG0it4rnZgL/++bP+tyTgdP0+1wiJCPUYtuXVLSbTnyBmiygYRydIcUnI0cI+G+YfxPIs6M67UaXgc+Zte77XSYXC5B1ZRvIqnYekRcho4MHOT7TolHtRQwvSTqNLa6sl/WtIg4bOEUX6iu7ITIgtFPNIQA7iEvc7aSLWGefMq2nEVcC+BTwg/NiwSQJbXc6cjtGi0zjskcM+zJkizIl7D89DsNQ/DnEuri0ISV2pnFcSAvLQ8pPTs88/CHLtO6TnpcIbOS3ifntmkS4mJiGSOV2aZhu8Q0RsYAEd82DM8q5XYdTCtKWZHEm+T4aRkeJmJkR0ivSnEG3ihnw1Eyivc1mJOgJJIZybQbaGZH0CwFrWKI9kmOWMgyHb7eV+eh0DruBpAfI3jDP9YY1YIjHJCw4BHM+BXu5yLv21IEEferdqT21CjXdiu0nzL+fu7QCUkg8GEA+ysuyQN3tOfCRXzbgfvZxHQnuI8NMD0b/M4dTCauhyxCRsMRtsyK++1gNGJ7F673gtriJrm2OWCjcOImvZ3gfWcArPngyQDPd8BMmI3+l869D6d7XGHuAFThMOVlNcNbMurjfK7bbK8dHe/y+9yMJ+OJNzBHI28E9xjIeNLHLjL71gBNRkN7PKhkfA3KIZiygZkfcrsJt2ECpMUNvqRTl3Vdf0vZhlhKVY5Or9Ic+tjkHZQeUqqU6rNoiakEQvsc8F9ud+u0OYYCmFxxuyrXx6BQH1Z7WxhuIFe1fgGO/hXG945WfWYLKxd3paqIJN6P9ewrFe6PBxNiN1sMmTRZzA5MO8yLby+OzJC4Ndea+oxjBR835k1rY/AKCVdkUu4YDrQ0XZFidk6K9Xak2Ge3UXkutt4jXwP2HZWwpK84p46pM7ETkLJ5XwcaTGhwiEaJlv1tEfuau9XkCgOlDPpl9Y8Odfq5rl2uInUohYJ/LJC0A69VMxjWsgbq8gpVRQrd3oCxP0KDgd3SD0+qN+AmQC/gvfiydXJWxE1JdrB2nbZvdc/G6lWS7L4ijqxLnUbdXJzOi7qxPL0U9fmF59D9vQHFhZaUh/8AcG6v2XwfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN169e252a83293a100e72b1b6feaad33e,8990fd6e83293a100e72b1b6feaad363,8f5c75e683a93a100e72b1b6feaad3ed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:03:20</sys_created_on>
+        <sys_id>169e252a83293a100e72b1b6feaad33e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 08:42:54</sys_updated_on>
+        <ui_id>b960b622-b1d9-4d8a-9bc5-fa9b17a3f535</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y33PiNhDH/xWPngm1MTiGt0yYdK7T3t0kaV5CxiPkddBV2D5JJqEM/3vXlox9kHDQcg9p7oVB+0P+7rIfZPt+RXhMRuQ8THowHPbcqee6vuuGA+aGPkz98+Dcp8wlHZLSOWCkBJbJGNcLKorSsFpdSqAa4sjrskJKSPV6jf6Yq1zQ5Z0NQwubcRGjn4zuHzokpxJ31CDJaLXlOlSSoFMQGHpda9rWqJd5uY4zVsxRV8Rr4+82c2w9zocxejCplON2CDxrSGNAHQkVCjpkTtOY6kwuyUjLAg1Yc/wpFctNxIyn2tQ5p8+K/40X9ntlXAJYGLM92Cwj2x9jTsZU0xvcmelCbtqVcQbKtCSGhBZCX7ZtJuBTrnmWmhRNp6LOzkQxTz+ahpDNBq2fo1AoAvKyzlK5KSu5mWVP17XIK55WHbElioxRsVlRrSWfFrqUsyIgoGrxnOY5Tx+jXGYLXiWjlHn3UeCim4jsCa+p+GPapazU3cWu0u4V2seV+Y5KXhbxB26DyesOUUt1KahSTSnYw+hrUSoxhdkSoqoLpgVlHpM81xd4lQVYzeuOHfcp2ztbrBkls10z7c+RFwbDwO9FjMoop5Frv8i/yqolKJALWlYWLXq7FFxS6Xw2sc51E+vc9Y7m44Aaaj5ubRFbNVk6qmVU+b6Fo0pzPhqHZcPbz4a1NHCYqXqBjdB9Q2zYst48HN/jAvqBP8CP88R3vZ7nhhCEIRu6lIVBMOj7zQyhAqyBCpx4qnDvhpDPAi3gSFhweHL0DBwLh9OCA79/LUDp7i4iR+cfh80BJdbYXNgakVRb46vFW5QU/ujp4xZGN7XRItQ7EqHXzxcveE8QFfx2q8vGstPnH0Nbebk/U45j96Gco6A3DYZuGJ/FiTs964f+4IwycM8g8AYwiAM28PwfQKjr7fvXj8MXhjThINo3bLVjF72W5zioDlC1A9WVlfWaXItUtXzpdKryt06n06EVuu5bYus93byxvcMGrUPqS1bIdA8B0YyrajJeJaEVcRwRB4isifjNqNwGYlv8v+HB/8nD/5+H/mDvqLVu/DdTzbI05qVi1aLC/DODuoYvwLS6SJe/3r/wcN9luYywBKyv6tGjzIp8vX7Yhei/b3gccwc0YvPGoBCgvtcYS1xzt2eT2tQ194jWacnrn+odwhsD7708KbG9s5YMm9mKC2wQTnz7ldmEGNkTMpqQNEthQjoTUkZF5XBVZoxAcRtHZVut1mtjKSS1G3itZZMd06WqIhWbQYyzWVm/sUQVDNZ+ijd2B/Sk5m9cgDM2TdltU/0wVes0feE7J96NDah2+uWWt0++wclOvv5P/E7x6BRtHi7wWMN/vxMy+fAPNcmNjcYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=169e252a83293a100e72b1b6feaad33e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6875c583-aff4-470c-90f0-bda8ca141bf0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:12:00</sys_created_on>
+        <sys_id>8990fd6e83293a100e72b1b6feaad363</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 08:42:55</sys_updated_on>
+        <ui_id>a70de34c-176d-4d34-88a7-5f457770e45d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTWsbMRD9K0ZnY/YjMY5vxSZQSJPiBF/SIMbSbCyq/aikdeIa//eOdrW2cdLgQA4N1KfV6M3se7Pv4fsNU5KNWZTIKL6IhyKN0zSJomR0Fi+G6SJOZAqIyPqsgBwJuQJdo6Vz80AFURluHbja/qijKJWiLDJlcpSEkcpWGtbzE6BiqbQ0WLDx/UOfVWDodQ4NG2+Ork7lq2GBmqCXCrW0rwhw68qfHebE0SFvBbX1q9B8Fy5783BZGulJxVHUZ/jssJDEfpyBtthnORQSXGnWbOxMTQWDIG8Kvd4hlqpwNJZ57LNVv4lAPIyan0dnSDIFtojdkYc1tuVsCg5uab5wtQlQsSyVIFHNgiRmUGs3Oay1gJvKqbJoWxwsdNdd6jovrtv1sN2A7qtRpbZEAiuv1vNvxWW3y/Jp1pG8VEWzmSBUlwL07gTOGbWonaezYagxpzk8h6pSxSOvTLlSTTNRyQePmg6DTJdP9E6rHosBCM97QLuFwSXVp015DkZ5Ed9oDDVv+8yu7USDtXsptEP+q/ZMWmFBAm+20KyAN7bwzcKoyn2hV60wEN/2QzzO8E27xXt3GRRkkYN4bDYTcoFDyeOBqA3tym23L6Px7gScQKlLwKzjdMwxJECWom4+iJJH9p+Gm97X6aH3P8r6Z/9N/w+bfnH+lsPExd5QBzP3xn/m8Wh4MUwTLsDwCngUHsxPr9+gRbMCr5GvkpeBmIDpfW+xvdke25sn747KCUK6qNw1BnldWPd/cVy7OuztXbcXISvnH5aV0WfKSpDx6cPyt4g8/AGZ5Bu6OAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8990fd6e83293a100e72b1b6feaad363"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>c02f4322-e196-4ce7-8540-226c1f2970a1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:03:28</sys_created_on>
+        <sys_id>8f5c75e683a93a100e72b1b6feaad3ed</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 08:42:55</sys_updated_on>
+        <ui_id>9c8ac6b1-3e46-484c-9704-8dbba565fdb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy24aMRT9FeQ1QvNIUGBXgZAqpUmVVGzSyLrYl+DW86jtIVDEv/d6xgMIIpJI2URlhe/L5xzuwQ8bpiQbsguUUTyI+yKN0zSJouTqIp7101mcyBQQY9ZlOWRIlQZFYSSdl6ArH9hsRgbBoeRxT1TGYO62W8pLZUsN62koo4hYKC0pz4YPj11WgqGJDg0bbo5Sb4WkYYaaSu9aTMcY3br0Z1mIKiNcXLXB69A5DpnO1zFlqMnDiaMuw5XDXCIBmYO22GUZ5BJcYdZs6ExFASItb3O93lUsVO4aohmsrPpLN19Evm6OxEwEEXZHHgRqwvMxOLinycJVZqdXoQTaRhOJc6i0Gx3GmoLb0qkib1oczHTbXegqy28aRdhuwMHvUVkCgaXn6ZE3tOb3i+L5rgU5UXktSaCoCwF6dwLnjJpVzsPZMNRYa5xBWar8iZemWKq6maBkvSdNh95cF890p1VPeQ+Ex90jVaE3ofi4Dk/BKE/iG42h5m2X2bUdabB2T4U05H8qj6QhFijwWoVaAl5vgm8WRpXuC121xAB82w1LP7s8t2FisF+og5n7xV/x+Ko/6KcJF2B4CTwKX8xvz9+gRbMEz5Evk1NDjMB0vje1nbt9bWeavNsqbyDSWuVHvSAvEwtuOYldH/Z2bppE8Mrlh3nl6jN5JdD49GZ5zSJRcvZP+GCTalfYA3uI0nDrwFX2ZxVFKa3sLxT0TJw64Uzl+3zwBrStDyYKtbQvwG9NgBlBdMgbOkdGCMnONCR3D8eHuSHuR/XnE3niv3k/Hv8BPHGIhTYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f5c75e683a93a100e72b1b6feaad3ed"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT IN6e10bd2e83293a100e72b1b6feaad3fe,bd4cfda683a93a100e72b1b6feaad3e8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0c52756283693a100e72b1b6feaad32d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:09:55</sys_created_on>
+        <sys_id>6e10bd2e83293a100e72b1b6feaad3fe</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:07</sys_updated_on>
+        <ui_id>6875c583-aff4-470c-90f0-bda8ca141bf0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnQdAjMhrfghQBCrQN0AS5tIGwIlc2UYpUScqOK/jfuxQl20gc9IEee9MOubszw4GGSPeu652911fWipWKll8e40goj9H3ECloMVpGTCsunNCqGoE42oDs/QF9cmE7CbuHI8LWQnKD07QODPU4NNFyeHbkdh1WEmqU1HjnjFArahecqiaFJrtkGSvyRZGnaf72IqsXRZ3lvACEgu7NjdczuTcfRiR+lbXfR7idN2nDPa0sjSN8cqg40uoGpMU4akFxcNrsDohB4LdKHoG1UC4obuHJih80Oy9Lf7FB0sgmOw5lNVk1u6QFw9vOEwyIg1rOFmrZt+pT0OFNxgZ66U5M7i3Nw86T9iwmSs3dWm8/zwtvhBoFTodSM5CHChzZUPcOrX8YlNjSoKqFriNzqs7ojRibiUubrCQVSSP1lpb6pCTAPPGEPILkhvB3I/wARngVH2kMNQeaNVjBqjFVNM4ZkrAfbam+955QEDhJqYIbdMEyIzp3RXs2OLHexy8jeZLGYbimR3LIqyxhvSEPXEJESArI/f5rn6YFDzU99Ivk/mH3v0j5JZRNmaXl+ZRfLM6l/Ey+X492/oto+8f4zWSnafo/2qfRFrYKEZ20jcv/OtmPPsZhgw254ciEJSL3Hns//5P9wY4CINgptNXmm5dwxPY/AZEUqVXdBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da7cb9e683a93a100e72b1b6feaad34b</block>
+        <comment/>
+        <connected_to>6875c583-aff4-470c-90f0-bda8ca141bf0</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:03:06</sys_created_on>
+        <sys_id>bd4cfda683a93a100e72b1b6feaad3e8</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:07</sys_updated_on>
+        <ui_id>c02f4322-e196-4ce7-8540-226c1f2970a1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3dde12a83293a100e72b1b6feaad34a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:51</sys_created_on>
+        <sys_id>b50ee92a83293a100e72b1b6feaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:00:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3dde12a83293a100e72b1b6feaad34a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:00:51</sys_created_on>
+        <sys_id>f50ee92a83293a100e72b1b6feaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:00:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3dde12a83293a100e72b1b6feaad34a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>cpr__parking_reservation_approval</internal_name>
+        <label_cache>[{"name":"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535.__action_status__.message","label":"1 - Ask For Approval➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"a70de34c-176d-4d34-88a7-5f457770e45d":["cpr_assigned_to"]},"attributes":{}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"approval","choices":[{"used":false,"label":"Not Yet Requested","image":"","reference":false,"missing":false,"rawLabel":"Not Yet Requested","selected":false,"value":"not requested","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Requested","image":"","reference":false,"missing":false,"rawLabel":"Requested","selected":false,"value":"requested","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"missing":false,"rawLabel":"Approved","selected":false,"value":"approved","parameters":{"name":"task","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"missing":false,"rawLabel":"Rejected","selected":false,"value":"rejected","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{"6875c583-aff4-470c-90f0-bda8ca141bf0":["condition"]}},{"name":"Created_1.current.cpr_status","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_status","choices":[{"used":false,"label":"Requested","image":"","reference":false,"missing":false,"rawLabel":"Requested","selected":false,"value":"requested","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"used":false,"label":"Confirmed","image":"","reference":false,"missing":false,"rawLabel":"Confirmed","selected":false,"value":"confirmed","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"missing":false,"rawLabel":"Rejected","selected":false,"value":"rejected","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Car Parking Reservation V2 Record","reference":"x_1869632_car_pa_0_car_parking_reservation_v2","reference_display":"Car Parking Reservation V2","type":"reference","base_type":"reference","usedInstances":{"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535":["record"],"a70de34c-176d-4d34-88a7-5f457770e45d":["record"],"9c8ac6b1-3e46-484c-9704-8dbba565fdb0":["record"],"e77b59d9-9e2e-4112-b068-05a0787c2c27":["record"],"d91aa2dc-5161-4a0c-ad8c-9236f590b47b":["record"]},"attributes":{}},{"name":"Created_1.current.cpr_assignment_group","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Assignment Group (cpr_assignment_group)","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_assignment_group","usedInstances":{"b960b622-b1d9-4d8a-9bc5-fa9b17a3f535":["approval_conditions"]}},{"name":"Created_1.current.cpr_requester_name.first_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"Created_1.current.cpr_vehicle_reg_no","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Vehicle Registration Number","reference":"","reference_display":"Vehicle Registration Number","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_vehicle_reg_no","usedInstances":{}},{"name":"Created_1.current.cpr_car_type.u_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Car Type➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_type","column_name":"u_name","usedInstances":{}},{"name":"Created_1.current.cpr_start_datetime","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Start Date/Time","reference":"","reference_display":"Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_start_datetime","usedInstances":{}},{"name":"Created_1.current.cpr_end_datetime","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛End Date/Time","reference":"","reference_display":"End Date/Time","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_end_datetime","usedInstances":{}},{"name":"Created_1.current.cpr_location.name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Parking Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{}},{"name":"Created_1.current.cpr_duration_hours","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Total Hours","reference":"","reference_display":"Total Hours","type":"integer","base_type":"integer","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_duration_hours","usedInstances":{}},{"name":"Created_1.current.cpr_total_fee","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Total Fee (Baht)","reference":"","reference_display":"Total Fee (Baht)","type":"currency","base_type":"currency","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_total_fee","usedInstances":{}},{"name":"Created_1.current.cpr_requester_name.last_name","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"Created_1.current.cpr_requester_email","label":"Trigger - Record Created➛Car Parking Reservation V2 Record➛Requester Email","reference":"","reference_display":"Requester Email","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_requester_email","usedInstances":{"e77b59d9-9e2e-4112-b068-05a0787c2c27":["ah_to"],"d91aa2dc-5161-4a0c-ad8c-9236f590b47b":["ah_to"]}}]</label_cache>
+        <master>true</master>
+        <name>CPR - Parking Reservation Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CPR - Parking Reservation Approval">b3dde12a83293a100e72b1b6feaad34a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1792f1a283693a100e72b1b6feaad31f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1792f1a283693a100e72b1b6feaad31f^sys_idNOT IN1f92f1a283693a100e72b1b6feaad320"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1792f1a283693a100e72b1b6feaad31f</id>
+        <name>CPR - Parking Reservation Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:53</sys_created_on>
+        <sys_id>1f92f1a283693a100e72b1b6feaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:20:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1f92f1a283693a100e72b1b6feaad320"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1792f1a283693a100e72b1b6feaad31f^sys_idNOT IN1792f1a283693a100e72b1b6feaad322,af92f1a283693a100e72b1b6feaad334"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</model>
+        <model_id>1792f1a283693a100e72b1b6feaad31f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1792f1a283693a100e72b1b6feaad31f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:53</sys_created_on>
+        <sys_id>1792f1a283693a100e72b1b6feaad322</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1792f1a283693a100e72b1b6feaad322"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</model>
+        <model_id>1792f1a283693a100e72b1b6feaad31f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1792f1a283693a100e72b1b6feaad31f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>af92f1a283693a100e72b1b6feaad334</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=af92f1a283693a100e72b1b6feaad334"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1792f1a283693a100e72b1b6feaad31f^sys_idNOT INef92f1a283693a100e72b1b6feaad373"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>ef92f1a283693a100e72b1b6feaad373</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 02:23:20</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLeACuviat62TRQNsN63t3T4EqUBJpE0sTbkUpcRd5N871M2yLo4dK1vnJYhIijxzdObMMLn/rjPkYqZf6QvkMqz3dMolFhyxxXaDYViqYYejtZpbI+4jGYitfiVFhHs6EcF6gdcbhiQsJoiFMBgIHwv9yuzpMWIRnm/DWx92gveTbbI99Wwanp8cczycDG3L8ZBwNsgxsl/EN8qXjsAhFjGSNOBObMF7Pg3hxO3X7PUpEtof6VpttlurfVVrvRVlvsBcv7p/6OmwJUCQCt73yhRVGD3ioYmFDc82bcsyDGvcN92h7ZqWbyNsGLBhla9KTLKBth0h+Eli7mO/4KrGqMDIv+NsW6xYwQdJ2Vujp5D+C7uPDbWOYMDu4XSueHQyctJhbxVQD99tFB/pSIoznQxYtOafU/yKVkxQxGROK4xEIeyHNwqyApEhIvNV8DjLD/xIeRJdNskCD7HiCUkpqBtJHCrCCWVAvZNyEwaRSNDPbqZ3s2vnrw+L6W83M2d2M1/MbqeLm2v9OYnL+SdSO6YIMyxOGs5zoYWPFDP1AXm0dgFNTw89QTfygydpnCvzubdT+zTgPk1YqSney6fCfcXn0R+SvGG0it4rnZgL/++bP+tyTgdP0+1wiJCPUYtuXVLSbTnyBmiygYRydIcUnI0cI+G+YfxPIs6M67UaXgc+Zte77XSYXC5B1ZRvIqnYekRcho4MHOT7TolHtRQwvSTqNLa6sl/WtIg4bOEUX6iu7ITIgtFPNIQA7iEvc7aSLWGefMq2nEVcC+BTwg/NiwSQJbXc6cjtGi0zjskcM+zJkizIl7D89DsNQ/DnEuri0ISV2pnFcSAvLQ8pPTs88/CHLtO6TnpcIbOS3ifntmkS4mJiGSOV2aZhu8Q0RsYAEd82DM8q5XYdTCtKWZHEm+T4aRkeJmJkR0ivSnEG3ihnw1Eyivc1mJOgJJIZybQbaGZH0CwFrWKI9kmOWMgyHb7eV+eh0DruBpAfI3jDP9YY1YIjHJCw4BHM+BXu5yLv21IEEferdqT21CjXdiu0nzL+fu7QCUkg8GEA+ysuyQN3tOfCRXzbgfvZxHQnuI8NMD0b/M4dTCauhyxCRsMRtsyK++1gNGJ7F673gtriJrm2OWCjcOImvZ3gfWcArPngyQDPd8BMmI3+l869D6d7XGHuAFThMOVlNcNbMurjfK7bbK8dHe/y+9yMJ+OJNzBHI28E9xjIeNLHLjL71gBNRkN7PKhkfA3KIZiygZkfcrsJt2ECpMUNvqRTl3Vdf0vZhlhKVY5Or9Ic+tjkHZQeUqqU6rNoiakEQvsc8F9ud+u0OYYCmFxxuyrXx6BQH1Z7WxhuIFe1fgGO/hXG945WfWYLKxd3paqIJN6P9ewrFe6PBxNiN1sMmTRZzA5MO8yLby+OzJC4Ndea+oxjBR835k1rY/AKCVdkUu4YDrQ0XZFidk6K9Xak2Ge3UXkutt4jXwP2HZWwpK84p46pM7ETkLJ5XwcaTGhwiEaJlv1tEfuau9XkCgOlDPpl9Y8Odfq5rl2uInUohYJ/LJC0A69VMxjWsgbq8gpVRQrd3oCxP0KDgd3SD0+qN+AmQC/gvfiydXJWxE1JdrB2nbZvdc/G6lWS7L4ijqxLnUbdXJzOi7qxPL0U9fmF59D9vQHFhZaUh/8AcG6v2XwfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1792f1a283693a100e72b1b6feaad31f^sys_idNOT IN037cb9e683a93a100e72b1b6feaad3fe,2b92f1a283693a100e72b1b6feaad36f,6792f1a283693a100e72b1b6feaad371"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>c02f4322-e196-4ce7-8540-226c1f2970a1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:04:00</sys_created_on>
+        <sys_id>037cb9e683a93a100e72b1b6feaad3fe</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <ui_id>9c8ac6b1-3e46-484c-9704-8dbba565fdb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy24aMRT9FeQ1QvNIUGBXgZAqpUmVVGzSyLrYl+DW86jtIVDEv/d6xgMIIpJI2URlhe/L5xzuwQ8bpiQbsguUUTyI+yKN0zSJouTqIp7101mcyBQQY9ZlOWRIlQZFYSSdl6ArH9hsRgbBoeRxT1TGYO62W8pLZUsN62koo4hYKC0pz4YPj11WgqGJDg0bbo5Sb4WkYYaaSu9aTMcY3br0Z1mIKiNcXLXB69A5DpnO1zFlqMnDiaMuw5XDXCIBmYO22GUZ5BJcYdZs6ExFASItb3O93lUsVO4aohmsrPpLN19Evm6OxEwEEXZHHgRqwvMxOLinycJVZqdXoQTaRhOJc6i0Gx3GmoLb0qkib1oczHTbXegqy28aRdhuwMHvUVkCgaXn6ZE3tOb3i+L5rgU5UXktSaCoCwF6dwLnjJpVzsPZMNRYa5xBWar8iZemWKq6maBkvSdNh95cF890p1VPeQ+Ex90jVaE3ofi4Dk/BKE/iG42h5m2X2bUdabB2T4U05H8qj6QhFijwWoVaAl5vgm8WRpXuC121xAB82w1LP7s8t2FisF+og5n7xV/x+Ko/6KcJF2B4CTwKX8xvz9+gRbMEz5Evk1NDjMB0vje1nbt9bWeavNsqbyDSWuVHvSAvEwtuOYldH/Z2bppE8Mrlh3nl6jN5JdD49GZ5zSJRcvZP+GCTalfYA3uI0nDrwFX2ZxVFKa3sLxT0TJw64Uzl+3zwBrStDyYKtbQvwG9NgBlBdMgbOkdGCMnONCR3D8eHuSHuR/XnE3niv3k/Hv8BPHGIhTYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=037cb9e683a93a100e72b1b6feaad3fe"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>2b92f1a283693a100e72b1b6feaad36f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:31:36</sys_updated_on>
+        <ui_id>b960b622-b1d9-4d8a-9bc5-fa9b17a3f535</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y33PiNhDH/xWPngm1MTiGt0yYdK7T3t0kaV5CxiPkddBV2D5JJqEM/3vXlox9kHDQcg9p7oVB+0P+7rIfZPt+RXhMRuQ8THowHPbcqee6vuuGA+aGPkz98+Dcp8wlHZLSOWCkBJbJGNcLKorSsFpdSqAa4sjrskJKSPV6jf6Yq1zQ5Z0NQwubcRGjn4zuHzokpxJ31CDJaLXlOlSSoFMQGHpda9rWqJd5uY4zVsxRV8Rr4+82c2w9zocxejCplON2CDxrSGNAHQkVCjpkTtOY6kwuyUjLAg1Yc/wpFctNxIyn2tQ5p8+K/40X9ntlXAJYGLM92Cwj2x9jTsZU0xvcmelCbtqVcQbKtCSGhBZCX7ZtJuBTrnmWmhRNp6LOzkQxTz+ahpDNBq2fo1AoAvKyzlK5KSu5mWVP17XIK55WHbElioxRsVlRrSWfFrqUsyIgoGrxnOY5Tx+jXGYLXiWjlHn3UeCim4jsCa+p+GPapazU3cWu0u4V2seV+Y5KXhbxB26DyesOUUt1KahSTSnYw+hrUSoxhdkSoqoLpgVlHpM81xd4lQVYzeuOHfcp2ztbrBkls10z7c+RFwbDwO9FjMoop5Frv8i/yqolKJALWlYWLXq7FFxS6Xw2sc51E+vc9Y7m44Aaaj5ubRFbNVk6qmVU+b6Fo0pzPhqHZcPbz4a1NHCYqXqBjdB9Q2zYst48HN/jAvqBP8CP88R3vZ7nhhCEIRu6lIVBMOj7zQyhAqyBCpx4qnDvhpDPAi3gSFhweHL0DBwLh9OCA79/LUDp7i4iR+cfh80BJdbYXNgakVRb46vFW5QU/ujp4xZGN7XRItQ7EqHXzxcveE8QFfx2q8vGstPnH0Nbebk/U45j96Gco6A3DYZuGJ/FiTs964f+4IwycM8g8AYwiAM28PwfQKjr7fvXj8MXhjThINo3bLVjF72W5zioDlC1A9WVlfWaXItUtXzpdKryt06n06EVuu5bYus93byxvcMGrUPqS1bIdA8B0YyrajJeJaEVcRwRB4isifjNqNwGYlv8v+HB/8nD/5+H/mDvqLVu/DdTzbI05qVi1aLC/DODuoYvwLS6SJe/3r/wcN9luYywBKyv6tGjzIp8vX7Yhei/b3gccwc0YvPGoBCgvtcYS1xzt2eT2tQ194jWacnrn+odwhsD7708KbG9s5YMm9mKC2wQTnz7ldmEGNkTMpqQNEthQjoTUkZF5XBVZoxAcRtHZVut1mtjKSS1G3itZZMd06WqIhWbQYyzWVm/sUQVDNZ+ijd2B/Sk5m9cgDM2TdltU/0wVes0feE7J96NDah2+uWWt0++wclOvv5P/E7x6BRtHi7wWMN/vxMy+fAPNcmNjcYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b92f1a283693a100e72b1b6feaad36f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6875c583-aff4-470c-90f0-bda8ca141bf0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>6792f1a283693a100e72b1b6feaad371</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 02:23:21</sys_updated_on>
+        <ui_id>a70de34c-176d-4d34-88a7-5f457770e45d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTWsbMRD9K0ZnY/YjMY5vxSZQSJPiBF/SIMbSbCyq/aikdeIa//eOdrW2cdLgQA4N1KfV6M3se7Pv4fsNU5KNWZTIKL6IhyKN0zSJomR0Fi+G6SJOZAqIyPqsgBwJuQJdo6Vz80AFURluHbja/qijKJWiLDJlcpSEkcpWGtbzE6BiqbQ0WLDx/UOfVWDodQ4NG2+Ork7lq2GBmqCXCrW0rwhw68qfHebE0SFvBbX1q9B8Fy5783BZGulJxVHUZ/jssJDEfpyBtthnORQSXGnWbOxMTQWDIG8Kvd4hlqpwNJZ57LNVv4lAPIyan0dnSDIFtojdkYc1tuVsCg5uab5wtQlQsSyVIFHNgiRmUGs3Oay1gJvKqbJoWxwsdNdd6jovrtv1sN2A7qtRpbZEAiuv1vNvxWW3y/Jp1pG8VEWzmSBUlwL07gTOGbWonaezYagxpzk8h6pSxSOvTLlSTTNRyQePmg6DTJdP9E6rHosBCM97QLuFwSXVp015DkZ5Ed9oDDVv+8yu7USDtXsptEP+q/ZMWmFBAm+20KyAN7bwzcKoyn2hV60wEN/2QzzO8E27xXt3GRRkkYN4bDYTcoFDyeOBqA3tym23L6Px7gScQKlLwKzjdMwxJECWom4+iJJH9p+Gm97X6aH3P8r6Z/9N/w+bfnH+lsPExd5QBzP3xn/m8Wh4MUwTLsDwCngUHsxPr9+gRbMCr5GvkpeBmIDpfW+xvdke25sn747KCUK6qNw1BnldWPd/cVy7OuztXbcXISvnH5aV0WfKSpDx6cPyt4g8/AGZ5Bu6OAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6792f1a283693a100e72b1b6feaad371"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1792f1a283693a100e72b1b6feaad31f^sys_idNOT IN6f92f1a283693a100e72b1b6feaad36c,cf7cf9e683a93a100e72b1b6feaad30f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0c52756283693a100e72b1b6feaad32d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>6f92f1a283693a100e72b1b6feaad36c</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <ui_id>6875c583-aff4-470c-90f0-bda8ca141bf0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxvijCWveSkph0K2wlr5sxVxLciMmS54+kmYm/31XluOENmML2+PerCPdq3OO7sE90d513tkHfWWteFZk8eUpIUIFDL97oqDlZEGoVkw4oVU1AAlZg/RhAz+ZsJ2E7eMBoSshmeFjtw4M1jhuyKJ/tSUYFjQZNPklzWlZzMsiy4r3F3k9L+u8YCVwKLGhhJpLPLrc03h3OyDJL/m5bRdw64xQz+P6duxyvwe1YYFVniWEvziuGEc+DUjLE9KCYuC02U6I4cDulDwAK6FcFNzCixU/8MJiNgsHG44S6ejGtKxGpyLcXIMDpOKp82YyTgvKbTSH8Qa8dMtjLB6464LUWOKglvtqLX2rPkVHyNTg6GG8RRK8C0oD9VFHc7/Sm897ljdCDa6Mm1JTkNMKHHpXexf49IRL3mKjqoWuQ0erzui1GIqRS5s+S1ykjdQbvDRMVwo0EE/RWEhvEL8e4EcwIqj4iG2wONKswQpaDZOI7dAmTnYJsVu7lGDtQSS6W333gWKUPIqroj+hhBrRuSu8ec1HHbvk7WAfzXTfL/GtHWdVnlJv0BWXIjUUB3K3++qzrGRxjfPyZv7PrD4vK5cwa2Z5NjudlYv5qaycSMmZASl+E5DwOn+YjyzL/gfkrwMibBXHetQ2XP4P8/EUwhDvnLymwiK1h4B92P8fwsYWh0vQY2ijzbcg6oDtfgKQ2j5raQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da7cb9e683a93a100e72b1b6feaad34b</block>
+        <comment/>
+        <connected_to>6875c583-aff4-470c-90f0-bda8ca141bf0</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Parking Reservation Approval">1792f1a283693a100e72b1b6feaad31f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:04:00</sys_created_on>
+        <sys_id>cf7cf9e683a93a100e72b1b6feaad30f</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:09</sys_updated_on>
+        <ui_id>c02f4322-e196-4ce7-8540-226c1f2970a1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1792f1a283693a100e72b1b6feaad31f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>6f92f1a283693a100e72b1b6feaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:20:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1792f1a283693a100e72b1b6feaad31f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_id>ef92f1a283693a100e72b1b6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 09:20:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1792f1a283693a100e72b1b6feaad31f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b3dde12a83293a100e72b1b6feaad34a</sys_id>
+        <latest_snapshot>1792f1a283693a100e72b1b6feaad31f</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch3-10-16-2025_10-24-2025_0919.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b3dde12a83293a100e72b1b6feaad34a^sys_idNOT INa792f1a283693a100e72b1b6feaad38d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a792f1a283693a100e72b1b6feaad38d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b3dde12a83293a100e72b1b6feaad34a</plan_id>
+        <snapshot>e3d91b888335f2100e72b1b6feaad3e0</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 09:20:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a792f1a283693a100e72b1b6feaad38d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 07:49:10</sys_updated_on>
+        <trigger display_value="">4f10a63783ad32100e72b1b6feaad3d8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b3dde12a83293a100e72b1b6feaad34a"/>
+</record_update>

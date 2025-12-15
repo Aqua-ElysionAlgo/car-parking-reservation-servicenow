@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1869632_car_pa_0_car_parking_reservation_v2</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CPR – Duplicate vehicle booking detected</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // ถ้าไม่มีทะเบียนหรือเวลา ไม่ต้องเช็ก
+    if (!current.cpr_vehicle_reg_no || !current.cpr_start_datetime || !current.cpr_end_datetime) {
+        return;
+    }
+
+    // กันกรณี End <= Start
+    var start = new GlideDateTime(current.cpr_start_datetime);
+    var end   = new GlideDateTime(current.cpr_end_datetime);
+
+    if (end.getNumericValue() <= start.getNumericValue()) {
+        gs.addErrorMessage('End Date/Time ต้องมากกว่า Start Date/Time');
+        current.setAbortAction(true);
+        return;
+    }
+
+    // ใช้ table เดียวกับ record นี้ (V2)
+    var gr = new GlideRecord(current.getTableName());
+
+    // รถทะเบียนเดียวกัน
+    gr.addQuery('cpr_vehicle_reg_no', current.cpr_vehicle_reg_no);
+
+    // ไม่เอา record ตัวเองเวลา update
+    gr.addQuery('sys_id', '!=', current.sys_id);
+
+    // *** เช็กเฉพาะคนละ Location ตาม requirement ข้อ 3 ***
+    gr.addQuery('cpr_location', '!=', current.cpr_location);
+
+    // ถ้าอยากให้ "ห้ามจองซ้ำไม่ว่าที่ไหน" ให้ลบบรรทัดด้านบนออก
+
+    // เงื่อนไขช่วงเวลาทับซ้อน: existing.start < new.end AND existing.end > new.start
+    gr.addQuery('cpr_start_datetime', '<', current.cpr_end_datetime);
+    gr.addQuery('cpr_end_datetime', '>', current.cpr_start_datetime);
+
+    gr.query();
+
+    if (gr.next()) {
+        gs.addErrorMessage('ไม่สามารถจองได้: รถทะเบียนนี้มีการจองในช่วงเวลานี้อยู่แล้วที่ Location อื่น');
+        current.setAbortAction(true);
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-03 06:16:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>573ef3c683e976100e72b1b6feaad37f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CPR – Duplicate vehicle booking detected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_573ef3c683e976100e72b1b6feaad37f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 04:01:44</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=573ef3c683e976100e72b1b6feaad37f"/>
+</record_update>

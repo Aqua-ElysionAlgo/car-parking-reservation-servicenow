@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3c82ec9e83ed76100e72b1b6feaad300" extends="task" label="Car Parking Reservation V2" max_length="40" name="x_1869632_car_pa_0_car_parking_reservation_v2" type="collection">
+        <element choice="3" label="SLA Status" max_length="40" name="cpr_sla_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Breached" sequence="1" value="breached"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="0" value="in_progress"/>
+            </choice>
+        </element>
+        <element label="Requester Phone" max_length="20" name="cpr_requester_phone" type="string"/>
+        <element label="Vehicle Registration Number" max_length="50" name="cpr_vehicle_reg_no" type="string"/>
+        <element label="Car Type" max_length="32" name="cpr_car_type" reference="x_1869632_car_pa_0_car_type" type="reference"/>
+        <element choice="3" default="requested" label="Status" max_length="40" name="cpr_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Total Fee (Baht)" max_length="38" name="cpr_total_fee" read_only="true" type="currency"/>
+        <element label="Staff Notes" max_length="1000" name="cpr_staff_notes" type="string"/>
+        <element label="Assigned To" max_length="32" name="cpr_assigned_to" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Reject Reason" max_length="1000" name="cpr_reject_reason" type="string"/>
+        <element label="End Date/Time" max_length="40" name="cpr_end_datetime" type="glide_date_time"/>
+        <element label="Requester Email" max_length="150" name="cpr_requester_email" type="string"/>
+        <element label="Response Due" max_length="40" name="cpr_response_due" type="glide_date_time"/>
+        <element label="Requester Name" max_length="32" name="cpr_requester_name" reference="sys_user" type="reference"/>
+        <element label="Parking Location" max_length="32" name="cpr_location" reference="cmn_location" type="reference"/>
+        <element default="254e256a83293a100e72b1b6feaad3c2" label="Assignment Group" max_length="32" name="cpr_assignment_group" read_only="true" reference="sys_user_group" type="reference"/>
+        <element label="Start Date/Time" max_length="40" name="cpr_start_datetime" type="glide_date_time"/>
+        <element label="Total Hours" max_length="40" name="cpr_duration_hours" read_only="true" type="integer"/>
+    </element>
+</database>

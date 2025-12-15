@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>chayakon.saikrasun</sys_created_by>
+        <sys_created_on>2025-12-08 03:04:11</sys_created_on>
+        <sys_id>04c2cdf383a132100e72b1b6feaad3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide API: string utilities</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_scope_privilege_04c2cdf383a132100e72b1b6feaad3f0</sys_update_name>
+        <sys_updated_by>chayakon.saikrasun</sys_updated_by>
+        <sys_updated_on>2025-12-08 03:04:11</sys_updated_on>
+        <target_name>Glide API: string utilities</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1d316f0e83e576100e72b1b6feaad3ff" label="Car Type" max_length="40" name="x_1869632_car_pa_0_car_type" type="collection">
+        <element label="Name" max_length="100" name="u_name" type="string"/>
+    </element>
+</database>

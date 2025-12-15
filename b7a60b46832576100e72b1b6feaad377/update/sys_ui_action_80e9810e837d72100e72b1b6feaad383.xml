@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>cpr_reject</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>gs.getUser().isMemberOf('Parking Admin') &amp;&amp; current.getValue('cpr_status') == 'requested'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Reject</name>
+        <onclick>var reason = prompt('กรุณาระบุเหตุผลที่ Reject'); if (!reason) {   return false; }  // เก็บไว้ในฟอร์ม เผื่ออยากเอาไปใช้ต่อ g_form.setValue('cpr_reject_reason', reason);  // ส่งไปให้ UI Action ฝั่ง server ทำงาน gsftSubmit(null, g_form.getFormElement(), 'c</onclick>
+        <order>100</order>
+        <script><![CDATA[// หา approval record ของคนที่กดอยู่ แล้ว set เป็น rejected + ใส่ comment
+var appr = new GlideRecord('sysapproval_approver');
+appr.addQuery('sysapproval', current.sys_id);
+appr.addQuery('approver', gs.getUserID());
+appr.addQuery('state', 'requested');
+appr.setLimit(1);
+appr.query();
+
+if (appr.next()) {
+  // ดึงเหตุผลจากฟอร์ม (ที่ client setValue ไว้)
+  var reason = current.getValue('cpr_reject_reason') || '';
+
+  appr.state = 'rejected';
+  if (reason) {
+    appr.comments = reason; // Business Rule ของคุณจะไปอ่าน comments.getJournalEntry(-1)
+  }
+  appr.update();
+
+  gs.addInfoMessage('Reject เรียบร้อยแล้ว');
+} else {
+  gs.addErrorMessage('ไม่พบรายการอนุมัติของคุณ (อาจไม่ได้เป็น approver หรือไม่ได้อยู่ state=requested)');
+}
+
+action.setRedirectURL(current);
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-15 03:31:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80e9810e837d72100e72b1b6feaad383</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Reject</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ui_action_80e9810e837d72100e72b1b6feaad383</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 04:49:35</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

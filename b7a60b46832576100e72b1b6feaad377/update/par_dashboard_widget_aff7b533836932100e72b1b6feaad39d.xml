@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">01eea17f83e532100e72b1b6feaad31d</canvas>
+        <component display_value="Horizontal bar">85855283b7e03010097cb81cde11a91d</component>
+        <component_props>{"filterConfigurations":[],"selectedElements":[],"chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"noTicks","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":true,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"yAxisHidden":false,"xAxisHidden":false,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{"datasourceConfigurations":{"table":{"timeZone":"SESSION","useSeriesLabels":false}}},"colors":{},"description":"จำนวนการจองที่ได้รับการยืนยัน แยกตามสถานที่จอดรถ","componentId":"83wecvtl","filterPerMetric":[],"sortBy":"value","configVersion":"23.0.0-ci-SNAPSHOT","rangesConfig":{},"colorConfig":{"type":"default"},"headerTitle":"📍 Confirmed Reservations by Location","dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Car Parking Reservation V2","sourceType":"table","tableOrViewName":"x_1869632_car_pa_0_car_parking_reservation_v2","filterQuery":"cpr_status=confirmed","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE4Njk2MzJfY2FyX3BhXzBfY2FyX3BhcmtpbmdfcmVzZXJ2YXRpb25fdjIxNzY1MTc2NTI3MDI5","dataCategories":["trend","group","simple"]}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE4Njk2MzJfY2FyX3BhXzBfY2FyX3BhcmtpbmdfcmVzZXJ2YXRpb25fdjIxNzY1MTc2NTI3MDI5","groupByField":"cpr_location","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"metrics":[{"dataSource":"dGFibGV4XzE4Njk2MzJfY2FyX3BhXzBfY2FyX3BhcmtpbmdfcmVzZXJ2YXRpb25fdjIxNzY1MTc2NTI3MDI5","id":"ZEdGaWJHVjRYekU0TmprMk16SmZZMkZ5WDNCaFh6QmZZMkZ5WDNCaGNtdHBibWRmY21WelpYSjJZWFJwYjI1ZmRqSXhOelkxTVRjMk5USTNNREk1MTc2NTE3NjUyOTA1MA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"yAxisTitle":"จำนวนการจอง","xAxisTitle":"Location name","headerColor":{"themeVariable":"--now-color_alert--moderate-0","value":"#ddd5fb"}}</component_props>
+        <h>24</h>
+        <name>CPR – Confirmed Reservations by Location</name>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-08 06:56:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aff7b533836932100e72b1b6feaad39d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CPR – Confirmed Reservations by Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>par_dashboard_widget_aff7b533836932100e72b1b6feaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-09 08:23:14</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>28</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1869632_car_pa_0_car_parking_reservation_v2" version="2" view="cpr_user_view">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Car Parking Reservation V2 - CPR User View" name="x_1869632_car_pa_0_car_parking_reservation_v2" related_list="NULL" sys_domain="global" view="ef2502c28375b2100e72b1b6feaad388">1972520283f5b2100e72b1b6feaad3bc</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 08:38:45</sys_created_on>
+            <sys_id>1d72520283f5b2100e72b1b6feaad3bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 08:38:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Car Parking Reservation V2 - CPR User View</calculated_name>
+            <filter/>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-15 08:38:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1972520283f5b2100e72b1b6feaad3bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Car Parking Reservation V2 - CPR User View</sys_name>
+            <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+            <sys_update_name>sys_ui_related_x_1869632_car_pa_0_car_parking_reservation_v2_cpr_user_view</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-15 08:38:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="CPR User View" name="cpr_user_view">ef2502c28375b2100e72b1b6feaad388</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

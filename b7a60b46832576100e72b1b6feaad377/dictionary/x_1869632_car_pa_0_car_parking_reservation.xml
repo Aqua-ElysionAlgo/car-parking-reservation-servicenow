@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cc29078a832576100e72b1b6feaad3b5" label="Car Parking Reservation" max_length="40" name="x_1869632_car_pa_0_car_parking_reservation" type="collection">
+        <element label="Vehicle Registration Number" max_length="50" name="u_vehicle_reg_no" type="string"/>
+        <element label="Start Date/Time" max_length="40" name="u_start_datetime" type="glide_date_time"/>
+        <element label="Parking Location" max_length="32" name="u_location" reference="cmn_location" type="reference"/>
+        <element label="Total Fee (Baht)" max_length="40" name="u_total_fee" type="currency"/>
+        <element label="Staff Notes" max_length="40" name="u_staff_notes" type="journal_input"/>
+        <element label="Requester Phone" max_length="20" name="u_requester_phone" type="string"/>
+        <element label="Total Hours" max_length="40" name="u_duration_hours" type="integer"/>
+        <element label="Reject Reason" max_length="1000" name="u_reject_reason" type="string"/>
+        <element label="End Date/Time" max_length="40" name="u_end_datetime" type="glide_date_time"/>
+        <element label="Car Type" max_length="32" name="u_car_type" reference="x_1869632_car_pa_0_car_type" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requester Email" max_length="150" name="u_requester_email" type="string"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Requester Name" max_length="32" name="u_requester_name" reference="sys_user" type="reference"/>
+        <element choice="3" default="requested" label="Status" max_length="40" name="u_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="u_location"/>
+        </index>
+        <index name="index4">
+            <element name="u_requester_name"/>
+        </index>
+    </element>
+</database>
