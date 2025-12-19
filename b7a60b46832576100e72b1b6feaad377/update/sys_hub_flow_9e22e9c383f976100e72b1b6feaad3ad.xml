@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>cpr__sync_approval_to_jira</internal_name>
+        <label_cache>[{"name":"Updated_1.current.cpr_status","label":"Trigger - Record Updated➛Car Parking Reservation V2 Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"cpr_status","choices":[{"label":"Requested","used":false,"image":"","reference":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"label":"Confirmed","used":false,"image":"","reference":false,"rawLabel":"Confirmed","selected":false,"missing":false,"value":"confirmed","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}},{"label":"Rejected","used":false,"image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1869632_car_pa_0_car_parking_reservation_v2","dependent_values":[""]}}],"usedInstances":{"26b15bd9-a0f7-4383-82f9-e194f65cf795":["condition"],"de9e9dc6-e378-4499-91c6-7534ae9834d0":["condition"]}},{"name":"Updated_1.current.correlation_id","label":"Trigger - Record Updated➛Car Parking Reservation V2 Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"x_1869632_car_pa_0_car_parking_reservation_v2","column_name":"correlation_id","usedInstances":{"8b4f4ef0-c3c3-4d9c-b3a7-8d73e0e859f1":["issue_id"],"a2b6d4c2-294f-4172-8ed0-69fc2802fd44":["issue_id"],"2aaee675-598f-4f3e-a762-9947d965a6d4":["issue_id"],"374fc7d2-4c9d-4ea1-a5af-0511ff0e43b3":["issue_id"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>CPR - Sync Approval to Jira</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:41:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e22e9c383f976100e72b1b6feaad3ad</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>CPR - Sync Approval to Jira</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_hub_flow_9e22e9c383f976100e72b1b6feaad3ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:00:38</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-12-17 23:58:04">6ee5a90f83f976100e72b1b6feaad3eb</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT IN92222d0783f976100e72b1b6feaad3e2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9e22e9c383f976100e72b1b6feaad3ad</id>
+        <name>CPR - Sync Approval to Jira</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:41:40</sys_created_on>
+        <sys_id>92222d0783f976100e72b1b6feaad3e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:41:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=92222d0783f976100e72b1b6feaad3e2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT IN0332214783f976100e72b1b6feaad33a,0f32214783f976100e72b1b6feaad311,1f32214783f976100e72b1b6feaad344"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</model>
+        <model_id>9e22e9c383f976100e72b1b6feaad3ad</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:42:00</sys_created_on>
+        <sys_id>0332214783f976100e72b1b6feaad33a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:58:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0332214783f976100e72b1b6feaad33a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</model>
+        <model_id>9e22e9c383f976100e72b1b6feaad3ad</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:41:59</sys_created_on>
+        <sys_id>0f32214783f976100e72b1b6feaad311</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:58:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f32214783f976100e72b1b6feaad311"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</model>
+        <model_id>9e22e9c383f976100e72b1b6feaad3ad</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:42:00</sys_created_on>
+        <sys_id>1f32214783f976100e72b1b6feaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:42:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1f32214783f976100e72b1b6feaad344"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT IN7232ed0783f976100e72b1b6feaad35a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:41:58</sys_created_on>
+        <sys_id>7232ed0783f976100e72b1b6feaad35a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:00:37</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT IN6575e5cb83f976100e72b1b6feaad39d,afb5a10f83f976100e72b1b6feaad3b7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Do Transition">00ae546e77f11110cc985228c810612c</action_type>
+        <action_type_parent display_value="Do Transition">055e9c2e77f11110cc985228c81061ad</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>26b15bd9-a0f7-4383-82f9-e194f65cf795</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:56:05</sys_created_on>
+        <sys_id>6575e5cb83f976100e72b1b6feaad39d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:00:38</sys_updated_on>
+        <ui_id>2aaee675-598f-4f3e-a762-9947d965a6d4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WW0vrQBD+K5LnJuRu0jdBBOEcBW8vImGyO2kXtkncbNSe0v9+ZnNpxUv1HEV8sC9lv53LNzPfLLleWYJbUysJAaMwxv39wqOfy1iaRL6fsMRzY88vrIlVwgLJUjRNixk5Taw7kK2BVqvLmoNGnnkOa5XCUjuson8JWlQlGa/XZM5FU0tYXv2bF5sLyenSml7fTKwaFNHQqKzp6smVXtaYSchRUvBzrUQ5I/f3Vjc6Hpvy9o4PXyzYpCCkGYNXihsm3sTCB40lR0pWgGxwYi2gpOIqtbSmWrUEKAR+WsrlxmIuSk3BLGP70Ig/FDlxXddYFkhVMexvN8dsaGAPs3klGJ7Wplc9oiGXgw+rZLsoT/oCTOuxgFbqsfWEtA3Fw9qQNjQGTsX5vLo/GxMeibKrb7iUFQO5OYGmLuStxsaMohUXT3rTI7+ezgMlLihjtoC6JiSrVXUnuixEeuHMJB2cQlb3xK4Rs9IBZip0qJngHBF+2MFXoIQp9zeFIWeT7rIUty0em3kzxiIep4ENge/bYZpzO8/Rt+OUJZjTxP1931p3rc1uW1NU36ShHVnfUTJomBK1PiAKdzhUvp4MK8PcXaIKoq2CNKgZ6kwrKBvRabu72C7QYVXi8wUZ0M9YgHdwHR0vOrJ7Fxuyeyc92beKeWU5/J/l+F7LEfK8iMLEs/0ckJbD9W2IA8+mRxIwKMCLIfn4cux8cQPY6gkaQxkfr8PzVfisNXib1eh4sKX1nOgrUg92S31AfrT+dVr3PA4sppe/CP3cDt2C2ambRnacFH6Q0vxdHnxY6zzZqapH304KG5pHN6gvUPs7eI2OZ4+JvUT2FcWHP4r/ZopnHtKMMbW9MKJPn9yNbEhzsJOY1A8cQpLEfyv+5i/HISviLwwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6575e5cb83f976100e72b1b6feaad39d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Do Transition">00ae546e77f11110cc985228c810612c</action_type>
+        <action_type_parent display_value="Do Transition">055e9c2e77f11110cc985228c81061ad</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>de9e9dc6-e378-4499-91c6-7534ae9834d0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:57:19</sys_created_on>
+        <sys_id>afb5a10f83f976100e72b1b6feaad3b7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:00:38</sys_updated_on>
+        <ui_id>374fc7d2-4c9d-4ea1-a5af-0511ff0e43b3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WyU7jQBD9FeRzHHnHzg0JISHNgMR2Qcgqd5eTHnVs024DmSj/PtVekoglwIAQB3KJurqWV1Xv2b5eWoJbEysOAMMgwv393KWfw1gSh54Xs9h1ItfLrZFVwBzJU9R1gykFjaw7kI0xLZeXFQeNPHXHrFEKCz1mJf1L0KIsyHm1Incu6krC4up9UWwmJKdLa3J9M7IqUARDo7Imy0dXelFhKiFDScnPtRLFlMLf2t0QeGza2zs+fLZhU4Is9ZC8VNwgcUcWPmgsOFKxHGSNI2sOBTVXqoU10aohg0Lgp4VcrD1motCUzDK+D7X4S5ljx3GMZ47UFcPudn1M+wF2ZjYrBcPTysyqs2jIZB/DStnMi5OuATN6zKGRehg9WZqa8mFlQBsYPab8fFbenw0Fj0TR9tdfypKBXJ9A0xSyRmNtVtGIi0ez6Sy/Hu8DJc6pYjqHqiJLWqnyTrRVCPR8PJV0GOeyvCd0tZgWY2CmwzENE8ZHZD9szVeghGn3N6WhYFPushC3DR6bfTPGQh4lvg2+59lBknE7y9Czo4TFmNHGvX3PWrWjTW8b01Q3pH4caTdRcqiZEpU+IAh32He+GvWSYc4uUvnhhkEa1BR1qhUUtWi53V5sBHSGf5CREp6KZOvmM4TwBsxD4EULeu9iDXrvpAP9WlMviMT7Ecn3EknAszwMYtf2MkASiePZEPmuTQ9LQD8HN4L44yLZ+eT1YcMnqA1k3JbFUzl8lgxeRzUEHmxgPQX6AtX93VTvLT9c/zquuy4HFtEbIA+8zA6cnNmJk4R2FOeen9D+He5/mOs83smqrW8ohTXto13UF7D9DbiGwLNtYM+BfYHxwQ/jvxnjmYu0Y0xsNwjpEyhzQhuSDOw4IvYDh4Ao8d+Mv/kHvet4QTcMAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=afb5a10f83f976100e72b1b6feaad3b7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT IN6a4521cb83f976100e72b1b6feaad3bd,80a56dcb83f976100e72b1b6feaad331"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cae5690f83f976100e72b1b6feaad3e9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id>9d6e88b3-a4c9-4227-bdfe-7fe16eeda9b6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:55:20</sys_created_on>
+        <sys_id>6a4521cb83f976100e72b1b6feaad3bd</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:48:30</sys_updated_on>
+        <ui_id>26b15bd9-a0f7-4383-82f9-e194f65cf795</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnQdAjNhrfghQBCrQN0KS5tAGxIimbKEWyfNhxBf17l3rYRuOgD/TYmzjL3Z0ZDtQlOngTvLvXV86JtUpWnx/TRKiI4XeXKGh5skqoVkx4oRUZgDTZggyxgJ9MOCNh/3BE6EZIZvk0zYDFHs9tsup+Kvm94URCzSU23nkr1BrbBcNTk0NTXNKCVuWyKvO8fH1R1MuqLkpWAYcK782N1zO5V+8GJH2RddyHuJs3acsirSJPE/7kuWIcVzcgHU+TFhQDr+3+gFgO7FbJI7ARyo+KW3hy4jvOLheLeLHhqJFOdhyOZLJqdkkLym9NJDgiHmo5W6hlaNWHUUc0mTcQpD8xOTicx00kHVlMlJq7jd59nBfeCDUInIpSU5CHE3i0oQ6eu/gwXPIWB5EWjEFziLF6K4Zm5NJma4mHrJF6h0tjUjKgkXiGHkF2g/ibAX4AK6KK9zgGm0eaNThByZAqHOctSugHW8i3EAmNAicpZHQDLzhqhfFXuGfLJ9Z9+jySJ2nsuk8GCXFGiowGix74jBpLnAcfXN9/CXleMexshG3xrZ+F988H/IusX8KiWRT54nzWL5bnsn4m5S8HvPxFwOOT/Ga+8zz/H/DTgAtHxqBO2oblf53vxxjmcYMbc8M4FQ6J3Efs7fxnjoU9BkDQU2in7dco4Yj1PwBp+rBZ4wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cae5690f83f976100e72b1b6feaad3ee</block>
+        <comment/>
+        <connected_to>26b15bd9-a0f7-4383-82f9-e194f65cf795</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CPR - Sync Approval to Jira">9e22e9c383f976100e72b1b6feaad3ad</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>9d6e88b3-a4c9-4227-bdfe-7fe16eeda9b6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:56:48</sys_created_on>
+        <sys_id>80a56dcb83f976100e72b1b6feaad331</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:48:30</sys_updated_on>
+        <ui_id>de9e9dc6-e378-4499-91c6-7534ae9834d0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy24UMRD8FTTn0WgeJIK9RaBISEAkEnKByOqxe3YNHtv4sZtltf9Oex67K5KIx4ETt3G1u7uqXJpdZmKwMfgbc+G9XOps8ekuz6ROGH3vMg09ZouMGy1kkEazAcizNaiYCvQppLcKtrdHhK+kEg6naRYc9QR02WL3UylsLTIFLSpqvA5O6iW1S0GnroSueskr3tTnTV2W9YvnVXvetFUtGkCo6d7c+Gom9+ztgORPsk77CPfzJuNEolWVeYb3AbVAWt2B8phnPWgBwbjtAXEI4kqrI7CSOoyKe7j38jvNrs/O0sUOSSOf7Dgc2WTV7JKRHK9sIjgiAVo1W2hU7PX7UUcyGTuIKpyYHD3NQ5tIJxYTpe56ZTYf5oWXUg8Cp6IyHNThBIFsaGNAnx4GFfY0iPVgLZnDrDNrOTQTl75YKjoUnTIbWpqSUgBPxAvyCIpLwl8P8C04mVS8ozHUPNJswUvOhlTRuOBIwn6whX2LidAocJLCRjfogudO2nBBe9Y4sd7nDyN5ksbd7qMlQihYVfDoyINQcOuYDxCi3+8/x7JsKH5fkNOlh9n94/5/kPTqsaQ/kvGn413/It7pQX4z3WVZ/o/3abylZ2NMJ23D8r9O912K8rjBj7kRyKUnIjcJezP/l1NhSwGQ/BTaGPc1SThi+x/KG6Pd4QUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:42:00</sys_created_on>
+        <sys_id>1f32214783f976100e72b1b6feaad371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:42:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:42:00</sys_created_on>
+        <sys_id>4332214783f976100e72b1b6feaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:42:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 07:42:00</sys_created_on>
+        <sys_id>4f32214783f976100e72b1b6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 07:42:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9e22e9c383f976100e72b1b6feaad3ad"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9e22e9c383f976100e72b1b6feaad3ad^sys_idNOT INc896e98f83f976100e72b1b6feaad3ed"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan/>
+        <plan_id>9e22e9c383f976100e72b1b6feaad3ad</plan_id>
+        <snapshot>c686298f83f976100e72b1b6feaad350</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 08:00:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c896e98f83f976100e72b1b6feaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 08:00:54</sys_updated_on>
+        <trigger display_value="">4496e98f83f976100e72b1b6feaad3ea</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9e22e9c383f976100e72b1b6feaad3ad"/>
+</record_update>

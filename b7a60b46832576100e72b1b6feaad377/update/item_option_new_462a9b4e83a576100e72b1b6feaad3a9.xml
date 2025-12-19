@@ -5,8 +5,8 @@
         <cat_item display_value="Car parking reservation">f839d7ca83a576100e72b1b6feaad38b</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>cpr_cars_type</choice_field>
+        <choice_table>x_1869632_car_pa_0_car_parking_reservation_v2</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -23,7 +23,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>cpr_car_type</field>
+        <field>cpr_cars_type</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text>กรุณาเลือกประเภทรถที่ต้องการจอด เพื่อให้ระบบจัดสรรพื้นที่จอดได้อย่างเหมาะสม</help_text>
@@ -45,7 +45,7 @@
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
-        <name>cpr_car_type</name>
+        <name>cpr_cars_type</name>
         <not_available_conversation>false</not_available_conversation>
         <order>400</order>
         <post_insert_script/>
@@ -60,7 +60,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_1869632_car_pa_0_car_parking_reservation_v2</record_producer_table>
-        <reference>x_1869632_car_pa_0_car_type</reference>
+        <reference>sys_user</reference>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -82,18 +82,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-03 03:36:53</sys_created_on>
         <sys_id>462a9b4e83a576100e72b1b6feaad3a9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Car Type</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>cpr_cars_type</sys_name>
         <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
         <sys_policy/>
         <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
         <sys_update_name>item_option_new_462a9b4e83a576100e72b1b6feaad3a9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-12 07:32:47</sys_updated_on>
+        <sys_updated_on>2025-12-18 03:38:49</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>8</type>
+        <type>5</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>

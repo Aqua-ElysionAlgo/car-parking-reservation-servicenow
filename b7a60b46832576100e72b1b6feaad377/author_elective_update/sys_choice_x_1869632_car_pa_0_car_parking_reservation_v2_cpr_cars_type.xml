@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cpr_cars_type" table="x_1869632_car_pa_0_car_parking_reservation_v2" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cpr_cars_type</element>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cpr_cars_type</sys_name>
+            <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+            <sys_update_name>sys_choice_x_1869632_car_pa_0_car_parking_reservation_v2_cpr_cars_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coupe</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>coupe</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EV (Electric Vehicle)</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>ev_electric_vehicle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hatchback</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>hatchback</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Motorcycle</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>motorcycle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pickup Truck</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>pickup_truck</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sedan</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>sedan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SUV</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>suv</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cpr_cars_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Van</label>
+            <language>en</language>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 02:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 02:54:07</sys_updated_on>
+            <value>van</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

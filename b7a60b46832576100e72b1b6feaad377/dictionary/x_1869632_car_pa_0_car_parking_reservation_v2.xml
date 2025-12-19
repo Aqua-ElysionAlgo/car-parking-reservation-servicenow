@@ -23,6 +23,18 @@
         <element label="Reject Reason" max_length="1000" name="cpr_reject_reason" type="string"/>
         <element label="End Date/Time" max_length="40" name="cpr_end_datetime" type="glide_date_time"/>
         <element label="Requester Email" max_length="150" name="cpr_requester_email" type="string"/>
+        <element choice="3" label="Cars Type" max_length="40" name="cpr_cars_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hatchback" sequence="2" value="hatchback"/>
+                <element inactive_on_update="false" label="SUV" sequence="6" value="suv"/>
+                <element inactive_on_update="false" label="Coupe" sequence="0" value="coupe"/>
+                <element inactive_on_update="false" label="Van" sequence="7" value="van"/>
+                <element inactive_on_update="false" label="Motorcycle" sequence="3" value="motorcycle"/>
+                <element inactive_on_update="false" label="Pickup Truck" sequence="4" value="pickup_truck"/>
+                <element inactive_on_update="false" label="EV (Electric Vehicle)" sequence="1" value="ev_electric_vehicle"/>
+                <element inactive_on_update="false" label="Sedan" sequence="5" value="sedan"/>
+            </choice>
+        </element>
         <element label="Response Due" max_length="40" name="cpr_response_due" type="glide_date_time"/>
         <element label="Requester Name" max_length="32" name="cpr_requester_name" reference="sys_user" type="reference"/>
         <element label="Parking Location" max_length="32" name="cpr_location" reference="cmn_location" type="reference"/>
