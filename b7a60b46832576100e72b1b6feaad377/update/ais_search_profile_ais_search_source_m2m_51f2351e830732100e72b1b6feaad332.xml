@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="car-parking-reservation-portal Search Profile">2ae27ddaa6073210b68390ecfc4a01c9</profile>
+        <search_source display_value="Car Parking Reservation V2">55f2351e830732100e72b1b6feaad32b</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:18:06</sys_created_on>
+        <sys_id>51f2351e830732100e72b1b6feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>car-parking-reservation-portal Search Profile.Car Parking Reservation V2</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_51f2351e830732100e72b1b6feaad332</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:18:06</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>6ae27ddaff0732102de25564f69bffc8</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app>
+        <path>car-parking-reservation-portal</path>
+        <root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:17:57</sys_created_on>
+        <sys_id>2ee27ddae90732106d4cb1d6d1adb2c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Car Parking Reservation Portal</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ux_page_registry_2ee27ddae90732106d4cb1d6d1adb2c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:17:57</sys_updated_on>
+        <title>Car Parking Reservation Portal</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_ux_page_registry_2ee27ddae90732106d4cb1d6d1adb2c9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>6ae27ddaff0732102de25564f69bffc8</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app><path>car-parking-reservation-portal</path><root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-16 04:17:57</sys_created_on><sys_id>2ee27ddae90732106d4cb1d6d1adb2c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Car Parking Reservation Portal</sys_name><sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package><sys_policy/><sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope><sys_update_name>sys_ux_page_registry_2ee27ddae90732106d4cb1d6d1adb2c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-16 04:17:57</sys_updated_on><title>Car Parking Reservation Portal</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>296013776</payload_hash>
+        <record_name>Car Parking Reservation Portal</record_name>
+        <reverted_from/>
+        <source>07951b12830132100e72b1b6feaad396</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2025-11-09 01:23:32</sys_created_on>
+        <sys_id>75247dde830732100e72b1b6feaad332</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19a663616200000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Application</type>
+        <update_guid>35247dde48073210c8152b0ac63b9832</update_guid>
+        <update_guid_history>35247dde48073210c8152b0ac63b9832:296013776</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:23:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>173020539d0640149ed1da19ad3138b9</sys_id>
+        <sys_metadata>2ee27ddae90732106d4cb1d6d1adb2c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Car Parking Reservation Portal</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_2ee27ddae90732106d4cb1d6d1adb2c9</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_2ee27ddae90732106d4cb1d6d1adb2c9">75247dde830732100e72b1b6feaad332</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:23:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

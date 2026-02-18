@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="CPR Portal">27d66dc183c732100e72b1b6feaad36a</app_config>
+        <description/>
+        <disable_auto_reflow>true</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings/>
+        <macroponent display_value="Record">ba5b9e81838f32100e72b1b6feaad363</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Record</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Record">7e5b120d830f32100e72b1b6feaad38c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-12 10:02:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f5b9e81838f32100e72b1b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ux_screen_4f5b9e81838f32100e72b1b6feaad36e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-12 10:02:12</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=4f5b9e81838f32100e72b1b6feaad36e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_ux_screen_4f5b9e81838f32100e72b1b6feaad36e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="CPR Portal">27d66dc183c732100e72b1b6feaad36a</app_config><description/><disable_auto_reflow>true</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings/><macroponent display_value="Record">ba5b9e81838f32100e72b1b6feaad363</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Record</name><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Record">7e5b120d830f32100e72b1b6feaad38c</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-12 10:02:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4f5b9e81838f32100e72b1b6feaad36e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Record</sys_name><sys_overrides/><sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package><sys_policy/><sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope><sys_update_name>sys_ux_screen_4f5b9e81838f32100e72b1b6feaad36e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-12 10:02:12</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=4f5b9e81838f32100e72b1b6feaad36e"/></record_update>]]></payload>
+        <payload_hash>1439285175</payload_hash>
+        <record_name>Record</record_name>
+        <reverted_from/>
+        <source>24f6de0a83f5b2100e72b1b6feaad37b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-12 10:02:12</sys_created_on>
+        <sys_id>8f5b9e81838f32100e72b1b6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c514d17480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-12 10:02:12</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>0f5b9e816e8f32109e41c91c03f73bcb</update_guid>
+        <update_guid_history>0f5b9e816e8f32109e41c91c03f73bcb:1439285175</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-12 10:02:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>68e2ec7d580e4122821ab7e2fae61509</sys_id>
+        <sys_metadata>4f5b9e81838f32100e72b1b6feaad36e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_4f5b9e81838f32100e72b1b6feaad36e</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_4f5b9e81838f32100e72b1b6feaad36e">8f5b9e81838f32100e72b1b6feaad3cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-12 10:02:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

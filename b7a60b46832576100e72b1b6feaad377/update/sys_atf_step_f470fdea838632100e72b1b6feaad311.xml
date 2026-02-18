@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Answer the questions on the form as follows:
+Requester Name = 
+and Car Type = Motorcycle
+and Parking Location = Denver
+and Start Date/Time = 2026-12-01 01:00:00
+and Vehicle Registration Number = DUPLICATE-999
+and End Date/Time = 2026-12-01 02:00:00</description>
+        <display_name>Set Variable Values</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="Set Variable Values">323ca6e1c3b2220076173b0ac3d3aec1</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:44:49</sys_created_on>
+        <sys_id>f470fdea838632100e72b1b6feaad311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Variable Values</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_atf_step_f470fdea838632100e72b1b6feaad311</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:44:49</sys_updated_on>
+        <table/>
+        <test display_value="CPR - Prevent Duplicate Booking (Same Car)">194e69e6838632100e72b1b6feaad30a</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=f470fdea838632100e72b1b6feaad311"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f470fdea838632100e72b1b6feaad311</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:44:49</sys_created_on>
+        <sys_id>3de03d2e838632100e72b1b6feaad3e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:44:49</sys_updated_on>
+        <value>IO:c5b95b0e83a576100e72b1b6feaad36d={{step['9cbe652a838632100e72b1b6feaad3b6'].user}}^IO:462a9b4e83a576100e72b1b6feaad3a9=motorcycle^IO:a3ba13ce83a576100e72b1b6feaad3df=denver^IO:167ad78e83a576100e72b1b6feaad362=2026-12-01 09:00:00^IO:2b4a93ca83a576100e72b1b6feaad3f0=DUPLICATE-999^IO:b99a9b8e83a576100e72b1b6feaad3f4=2026-12-01 10:00:00^EQ</value>
+        <variable display_value="Variable Values">346eea25c3b2220076173b0ac3d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f470fdea838632100e72b1b6feaad311</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:44:49</sys_created_on>
+        <sys_id>71e03d2e838632100e72b1b6feaad3e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:44:49</sys_updated_on>
+        <value>f839d7ca83a576100e72b1b6feaad38b</value>
+        <variable display_value="Item">571e6a25c3b2220076173b0ac3d3ae46</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f470fdea838632100e72b1b6feaad311"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_values</field>
+        <id>f470fdea838632100e72b1b6feaad311</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:44:49</sys_created_on>
+        <sys_id>79e03d2e838632100e72b1b6feaad3e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:44:49</sys_updated_on>
+        <table>var__m_atf_input_variable_323ca6e1c3b2220076173b0ac3d3aec1</table>
+        <value>IO:c5b95b0e83a576100e72b1b6feaad36d={{step['9cbe652a838632100e72b1b6feaad3b6'].user}}^IO:462a9b4e83a576100e72b1b6feaad3a9=motorcycle^IO:a3ba13ce83a576100e72b1b6feaad3df=denver^IO:167ad78e83a576100e72b1b6feaad362=2026-12-01 09:00:00^IO:2b4a93ca83a576100e72b1b6feaad3f0=DUPLICATE-999^IO:b99a9b8e83a576100e72b1b6feaad3f4=2026-12-01 10:00:00^EQ</value>
+    </sys_element_mapping>
+</record_update>

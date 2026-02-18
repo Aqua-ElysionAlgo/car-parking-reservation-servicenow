@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Insert a record into 'x_1869632_car_pa_0_car_parking_reservation_v2' with the following values:
+Requester Name = {{Step 1: Create a User.User}}
+and Requester Phone = {{Step 1: Create a User.User.Mobile phone}}
+and Requester Email = {{Step 1: Create a User.User.Email}}
+and Vehicle Registration Number = DUPLICATE-999
+and Start Date/Time = 2026-12-01 08:00:00
+and End Date/Time = 2026-12-01 12:00:00
+and Parking Location = Baltimore
+and Cars Type = Motorcycle
+Confirm the record was successfully inserted</description>
+        <display_name>Record Insert</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Record Insert">14872288df60220062fe6c7a4df26319</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>104f296a838632100e72b1b6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Insert</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_atf_step_104f296a838632100e72b1b6feaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <test display_value="CPR - Prevent Duplicate Booking (Same Car)">194e69e6838632100e72b1b6feaad30a</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=104f296a838632100e72b1b6feaad340"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>104f296a838632100e72b1b6feaad340</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>2540f5ea838632100e72b1b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enforce security">e6e3c7535320220002c6435723dc3496</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>104f296a838632100e72b1b6feaad340</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>6940f5ea838632100e72b1b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <value>x_1869632_car_pa_0_car_parking_reservation_v2</value>
+        <variable display_value="Table">90144b535320220002c6435723dc3488</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>104f296a838632100e72b1b6feaad340</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>ad40f5ea838632100e72b1b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <value>cpr_requester_name={{step['9cbe652a838632100e72b1b6feaad3b6'].user}}^cpr_requester_phone={{step['9cbe652a838632100e72b1b6feaad3b6'].user.mobile_phone}}^cpr_requester_email={{step['9cbe652a838632100e72b1b6feaad3b6'].user.email}}^cpr_vehicle_reg_no=DUPLICATE-999^cpr_start_datetime=2026-12-01 08:00:00^cpr_end_datetime=2026-12-01 12:00:00^cpr_location=baltimore^cpr_cars_type=motorcycle^EQ</value>
+        <variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>104f296a838632100e72b1b6feaad340</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>ed40f5ea838632100e72b1b6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <value>record_successfully_inserted</value>
+        <variable display_value="Assert type">9024a37f671003007ba405225685efe5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=104f296a838632100e72b1b6feaad340"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enforce_security</field>
+        <id>104f296a838632100e72b1b6feaad340</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>e540f5ea838632100e72b1b6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>104f296a838632100e72b1b6feaad340</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 05:42:04</sys_created_on>
+        <sys_id>2d40f5ea838632100e72b1b6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 05:42:04</sys_updated_on>
+        <table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table>
+        <value>cpr_requester_name={{step['9cbe652a838632100e72b1b6feaad3b6'].user}}^cpr_requester_phone={{step['9cbe652a838632100e72b1b6feaad3b6'].user.mobile_phone}}^cpr_requester_email={{step['9cbe652a838632100e72b1b6feaad3b6'].user.email}}^cpr_vehicle_reg_no=DUPLICATE-999^cpr_start_datetime=2026-12-01 08:00:00^cpr_end_datetime=2026-12-01 12:00:00^cpr_location=baltimore^cpr_cars_type=motorcycle^EQ</value>
+    </sys_element_mapping>
+</record_update>

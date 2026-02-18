@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="DELETE">
+        <active>true</active>
+        <api_name>x_1869632_car_pa_0.Audience for app car-parking-reservation-portal</api_name>
+        <description/>
+        <name>Audience for app car-parking-reservation-portal</name>
+        <role_names/>
+        <roles>7fa60b46832576100e72b1b6feaad3ad,09552c968321b6100e72b1b6feaad35e,3ba60b46832576100e72b1b6feaad3b7</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:18:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8cf2fdda830732100e72b1b6feaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app car-parking-reservation-portal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ux_applicability_8cf2fdda830732100e72b1b6feaad3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:18:00</sys_updated_on>
+    </sys_ux_applicability>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_ux_applicability_8cf2fdda830732100e72b1b6feaad3d9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability"><sys_ux_applicability action="INSERT_OR_UPDATE"><active>true</active><api_name>x_1869632_car_pa_0.Audience for app car-parking-reservation-portal</api_name><description/><name>Audience for app car-parking-reservation-portal</name><role_names/><roles>7fa60b46832576100e72b1b6feaad3ad,09552c968321b6100e72b1b6feaad35e,3ba60b46832576100e72b1b6feaad3b7</roles><sys_class_name>sys_ux_applicability</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-16 04:18:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8cf2fdda830732100e72b1b6feaad3d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Audience for app car-parking-reservation-portal</sys_name><sys_overrides/><sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package><sys_policy/><sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope><sys_update_name>sys_ux_applicability_8cf2fdda830732100e72b1b6feaad3d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-16 04:18:00</sys_updated_on></sys_ux_applicability></record_update>]]></payload>
+        <payload_hash>1073413099</payload_hash>
+        <record_name>Audience for app car-parking-reservation-portal</record_name>
+        <reverted_from/>
+        <source>24f6de0a83f5b2100e72b1b6feaad37b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:18:00</sys_created_on>
+        <sys_id>c8f2311e830732100e72b1b6feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c64ab67a80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:18:00</sys_updated_on>
+        <type>Audience</type>
+        <update_guid>88f2311ede07321049a800574eecae2a</update_guid>
+        <update_guid_history>88f2311ede07321049a800574eecae2a:1073413099</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:23:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability">sys_ux_applicability</sys_db_object>
+        <sys_id>1f6cc9b9b9b64b12a1e6b533d66e7c81</sys_id>
+        <sys_metadata>8cf2fdda830732100e72b1b6feaad3d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app car-parking-reservation-portal</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_8cf2fdda830732100e72b1b6feaad3d9</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_8cf2fdda830732100e72b1b6feaad3d9">c8f2311e830732100e72b1b6feaad32b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:23:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

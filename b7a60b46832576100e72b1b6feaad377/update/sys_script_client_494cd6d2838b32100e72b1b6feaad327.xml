@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>cpr_end_datetime</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CPR - Calculate Parking Fee Real-time 2</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var startStr = g_form.getValue('cpr_start_datetime');
+    var endStr = g_form.getValue('cpr_end_datetime');
+
+    if (startStr && endStr) {
+        var start = new Date(startStr);
+        var end = new Date(endStr);
+
+        if (end <= start) {
+            g_form.showFieldMsg('cpr_end_datetime', 'End Date ต้องมากกว่า Start Date', 'error');
+            return;
+        }
+
+        function calcFeeForDay(hours) {
+            if (hours <= 0) return 0;
+            if (hours > 8) return 200;
+            var fee = 10;
+            if (hours > 1) fee += (Math.min(hours, 4) - 1) * 15;
+            if (hours > 4) fee += (Math.min(hours, 8) - 4) * 20;
+            return fee;
+        }
+
+        var totalFee = 0;
+        var totalHours = 0;
+        // เปลี่ยนจาก current เป็น checkDate เพื่อแก้ Error
+        var checkDate = new Date(start); 
+
+        while (checkDate < end) {
+            var endOfDay = new Date(checkDate);
+            endOfDay.setHours(23, 59, 59, 999);
+
+            var sliceEnd = endOfDay < end ? endOfDay : end;
+            var diffMin = (sliceEnd - checkDate) / (1000 * 60);
+            var hoursInSlice = Math.ceil(diffMin / 60);
+
+            totalHours += hoursInSlice;
+            totalFee += calcFeeForDay(hoursInSlice);
+
+            checkDate = new Date(sliceEnd);
+            checkDate.setSeconds(checkDate.getSeconds() + 1);
+        }
+
+        g_form.setValue('cpr_duration_hours', totalHours);
+        g_form.setValue('cpr_total_fee', totalFee);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 07:19:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>494cd6d2838b32100e72b1b6feaad327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CPR - Calculate Parking Fee Real-time 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_client_494cd6d2838b32100e72b1b6feaad327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 07:24:53</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CPR - Validate Start Date is Future</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var field = 'cpr_start_datetime';
+    var value = g_form.getValue(field);
+
+    g_form.hideFieldMsg(field, true);
+
+    if (!value) return true;
+
+    // ดึงเวลาปัจจุบัน (Client Side)
+    var now = new Date();
+    
+    // แปลงค่าจากฟิลด์เป็น Date Object 
+    // สำหรับหน้าฟอร์มปกติ แนะนำให้ใช้ getDateFromFormat ของ ServiceNow ถ้ามี Format ที่แน่นอน
+    var start = new Date(value);
+
+    if (start < now) {
+        g_form.showFieldMsg(
+            field,
+            'ไม่สามารถจองวัน/เวลาย้อนหลังจากเวลาปัจจุบันได้',
+            'error'
+        );
+        
+        // เลื่อนหน้าจอไปที่ฟิลด์ที่มีปัญหาเพื่อให้ผู้ใช้เห็นข้อความชัดเจน
+        g_form.getControl(field).focus(); 
+        
+        return false; // ❌ ระงับการบันทึก (Submit/Update)
+    }
+
+    return true;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-18 06:17:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d941e40f830b76100e72b1b6feaad3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPR - Validate Start Date is Future</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_client_d941e40f830b76100e72b1b6feaad3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-18 06:17:18</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

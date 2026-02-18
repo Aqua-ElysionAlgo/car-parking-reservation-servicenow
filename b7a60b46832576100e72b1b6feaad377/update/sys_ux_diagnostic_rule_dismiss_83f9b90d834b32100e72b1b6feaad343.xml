@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_diagnostic_rule_dismiss">
+    <sys_ux_diagnostic_rule_dismiss action="INSERT_OR_UPDATE">
+        <dismiss_targets>{
+  "55b74c5270408210f877603d6fa53cf8": [
+    {
+      "button_1": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:12.450Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "button_2": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:12.898Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "button_3": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:13.777Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "button_4": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:14.463Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ],
+  "cfe61cc9a313121096a7a462a51e6120": [
+    {
+      "presentational_list_1": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:15.264Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ],
+  "945ff4359f3b1210763d485bf90a1ccb": [
+    {
+      "column_layout_1": {
+        "queryId": "now_default",
+        "dismissTimestamp": "2026-02-12T07:36:15.827Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "column_layout_2": {
+        "queryId": "now_default",
+        "dismissTimestamp": "2026-02-12T07:36:16.426Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "column_layout_3": {
+        "queryId": "now_default",
+        "dismissTimestamp": "2026-02-12T07:36:17.074Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "column_layout_5": {
+        "queryId": "now_default",
+        "dismissTimestamp": "2026-02-12T07:36:17.569Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "record_list_footer_container_1": {
+        "queryId": "now_default",
+        "dismissTimestamp": "2026-02-12T07:36:18.358Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ],
+  "039259554373311026f1f7bb68b8f2c7": [
+    {
+      "image_1": {
+        "queryId": "",
+        "dismissTimestamp": "2026-02-12T07:36:18.911Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}</dismiss_targets>
+        <sys_class_name>sys_ux_diagnostic_rule_dismiss</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-12 07:36:23</sys_created_on>
+        <sys_id>83f9b90d834b32100e72b1b6feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ux_diagnostic_rule_dismiss_83f9b90d834b32100e72b1b6feaad343</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-12 07:36:23</sys_updated_on>
+        <table_name>sys_ux_macroponent</table_name>
+        <target_id>24f6e10583c732100e72b1b6feaad3e9</target_id>
+    </sys_ux_diagnostic_rule_dismiss>
+</record_update>

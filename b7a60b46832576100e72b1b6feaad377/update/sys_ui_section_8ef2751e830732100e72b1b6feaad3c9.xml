@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Work Assignment" section_id="8ef2751e830732100e72b1b6feaad3c9" sys_domain="global" table="x_1869632_car_pa_0_car_parking_reservation_v2" version="3" view="workspace-car-parking-reservation-portal-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_assignment_group</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>0ef2751e830732100e72b1b6feaad3d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>82f2751e830732100e72b1b6feaad3db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_assigned_to</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>0af2751e830732100e72b1b6feaad3dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>c6f2751e830732100e72b1b6feaad3da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_reject_reason</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>c2f2751e830732100e72b1b6feaad3dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpr_staff_notes</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_id>4ef2751e830732100e72b1b6feaad3db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Assignment" display_value="Work Assignment" name="x_1869632_car_pa_0_car_parking_reservation_v2" sys_domain="global" view="6ae27dda07073210e5eb8c6e3811f0be">8ef2751e830732100e72b1b6feaad3c9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Work Assignment</caption>
+            <header>false</header>
+            <name>x_1869632_car_pa_0_car_parking_reservation_v2</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-16 04:18:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ef2751e830732100e72b1b6feaad3c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1869632_car_pa_0_car_parking_reservation_v2</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+            <sys_update_name>sys_ui_section_8ef2751e830732100e72b1b6feaad3c9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-16 04:18:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Car Parking Reservation Portal 0" name="workspace-car-parking-reservation-portal-0">6ae27dda07073210e5eb8c6e3811f0be</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

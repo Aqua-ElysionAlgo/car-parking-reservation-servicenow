@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CPR - Validate Start Date is Future</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var field = 'cpr_start_datetime';
+    var value = g_form.getValue(field);
+
+    g_form.hideFieldMsg(field, true);
+
+    if (!value) return true;
+
+    // ดึงเวลาปัจจุบัน (Client Side)
+    var now = new Date();
+    
+    // แปลงค่าจากฟิลด์เป็น Date Object 
+    // สำหรับหน้าฟอร์มปกติ แนะนำให้ใช้ getDateFromFormat ของ ServiceNow ถ้ามี Format ที่แน่นอน
+    var start = new Date(value);
+
+    if (start < now) {
+        g_form.showFieldMsg(
+            field,
+            'ไม่สามารถจองวัน/เวลาย้อนหลังจากเวลาปัจจุบันได้',
+            'error'
+        );
+        
+        // เลื่อนหน้าจอไปที่ฟิลด์ที่มีปัญหาเพื่อให้ผู้ใช้เห็นข้อความชัดเจน
+        g_form.getControl(field).focus(); 
+        
+        return false; // ❌ ระงับการบันทึก (Submit/Update)
+    }
+
+    return true;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-18 06:14:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5cff104b830b76100e72b1b6feaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPR - Validate Start Date is Future</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_client_5cff104b830b76100e72b1b6feaad301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-18 06:14:09</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_script_client_5cff104b830b76100e72b1b6feaad301</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CPR - Validate Start Date is Future&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var field = 'cpr_start_datetime';
+    var value = g_form.getValue(field);
+
+    g_form.hideFieldMsg(field, true);
+
+    if (!value) return true;
+
+    // ดึงเวลาปัจจุบัน (Client Side)
+    var now = new Date();
+    
+    // แปลงค่าจากฟิลด์เป็น Date Object 
+    // สำหรับหน้าฟอร์มปกติ แนะนำให้ใช้ getDateFromFormat ของ ServiceNow ถ้ามี Format ที่แน่นอน
+    var start = new Date(value);
+
+    if (start &lt; now) {
+        g_form.showFieldMsg(
+            field,
+            'ไม่สามารถจองวัน/เวลาย้อนหลังจากเวลาปัจจุบันได้',
+            'error'
+        );
+        
+        // เลื่อนหน้าจอไปที่ฟิลด์ที่มีปัญหาเพื่อให้ผู้ใช้เห็นข้อความชัดเจน
+        g_form.getControl(field).focus(); 
+        
+        return false; // ❌ ระงับการบันทึก (Submit/Update)
+    }
+
+    return true;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-18 06:14:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5cff104b830b76100e72b1b6feaad301&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CPR - Validate Start Date is Future&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0"&gt;b7a60b46832576100e72b1b6feaad377&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Car Parking Reservation"&gt;b7a60b46832576100e72b1b6feaad377&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5cff104b830b76100e72b1b6feaad301&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-18 06:14:09&lt;/sys_updated_on&gt;&lt;table&gt;x_1869632_car_pa_0_car_parking_reservation_v2&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>86047927</payload_hash>
+        <record_name>CPR - Validate Start Date is Future</record_name>
+        <reverted_from/>
+        <source>78480c4b834776100e72b1b6feaad319</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-18 06:14:09</sys_created_on>
+        <sys_id>3cb0248b830b76100e72b1b6feaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c6f62763b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-18 06:14:09</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f8b0248b220b7610238edc649017d9bf</update_guid>
+        <update_guid_history>f8b0248b220b7610238edc649017d9bf:86047927</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-18 06:16:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0671e8803c2147d6a6afe46a5a2dc2c1</sys_id>
+        <sys_metadata>5cff104b830b76100e72b1b6feaad301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPR - Validate Start Date is Future</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent display_value="Car Parking Reservation V2">3c82ec9e83ed76100e72b1b6feaad300</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_script_client_5cff104b830b76100e72b1b6feaad301</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5cff104b830b76100e72b1b6feaad301">3cb0248b830b76100e72b1b6feaad3c0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-18 06:16:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

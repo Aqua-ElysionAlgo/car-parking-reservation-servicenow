@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1869632_car_pa_0_car_parking_reservation_v2</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CPR - Sync to Jira</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	try {
+		// 1. สร้างจดหมาย (REST Message)
+		var request = new sn_ws.RESTMessageV2();
+		request.setHttpMethod('POST');
+		
+		// ]]>🔴<![CDATA[ แก้ลิงก์ตรงนี้: ใส่ Webhook URL ของคุณ (ที่ได้จาก Jira)
+		request.setEndpoint('https://api-private.atlassian.com/automation/webhooks/jira/a/ae84a2be-b99f-4972-9707-83e277489ad4/019b3541-4123-7b4e-9f71-1c9a0f0ed8e3'); 
+		
+		request.setRequestHeader('Content-Type', 'application/json');
+
+		// 2. เตรียมข้อมูลที่จะส่ง (Mapping)
+		// ฝั่งซ้ายคือชื่อตัวแปรที่จะส่งไป Jira (JSON Key)
+		// ฝั่งขวาคือชื่อ Field ใน ServiceNow (ต้องตรงกับ Database name)
+		
+		var body = {
+			"jira_key": current.correlation_id.toString(),      // กุญแจสำคัญ (ห้ามลบ)
+			
+			"req_name": current.cpr_requester_name.toString(),  // ชื่อผู้จอง
+			"req_phone": current.cpr_requester_phone.toString(),// เบอร์โทร
+			"req_email": current.cpr_requester_email.toString(),// อีเมล
+			
+			"car_type": current.cpr_car_type.getDisplayValue(), // ประเภทรถ (ใช้ getDisplayValue เพื่อเอาชื่อ ไม่เอา ID)
+			"plate_no": current.cpr_vehicle_reg_no.toString(),  // ทะเบียนรถ
+			
+			"location": current.cpr_location.getDisplayValue(), // สถานที่จอด
+			
+			"start_time": current.cpr_startdate.toString(),    // เวลาเริ่ม
+			"end_time": current.cpr_enddate.toString()         // เวลาสิ้นสุด
+		};
+
+		// 3. ส่งออกไป
+		request.setRequestBody(JSON.stringify(body));
+		var response = request.execute();
+		
+		// (Optional) เช็ค Log ว่าส่งผ่านไหม ดูได้ที่ System Logs
+		// gs.info('Sent to Jira: ' + response.getBody());
+
+	} catch (ex) {
+		gs.info('Error sending to Jira: ' + ex.message);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-19 06:40:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b58c969b83713a100e72b1b6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPR - Sync to Jira</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_script_b58c969b83713a100e72b1b6feaad32d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-19 06:40:46</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b58c969b83713a100e72b1b6feaad32d"/>
+</record_update>

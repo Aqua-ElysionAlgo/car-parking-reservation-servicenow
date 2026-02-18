@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Click UI action 'Submit' on 'Car Parking Reservation V2' form
+
+Warning: Using assert type '-- None --' may cause unexpected behavior for server UI actions. Avoid potential issues by setting the assert type and using a timeout&#13;
+See the documentation for Test Design Considerations</description>
+        <display_name>Click a UI Action</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>6</order>
+        <step_config display_value="Click a UI Action">0f4a128297202200abe4bb7503ac4af0</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>1ef66c9d838e76100e72b1b6feaad342</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Click a UI Action</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_atf_step_1ef66c9d838e76100e72b1b6feaad342</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 03:56:31</sys_updated_on>
+        <table>x_1869632_car_pa_0_car_parking_reservation_v2</table>
+        <test display_value="CPR - Submit Valid Reservation (Happy Path)">2f34a89d834af6100e72b1b6feaad35a</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message>Warning: Using assert type '-- None --' may cause unexpected behavior for server UI actions. Avoid potential issues by setting the assert type and using a timeout&#13;
+See the documentation for Test Design Considerations</warning_message>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=1ef66c9d838e76100e72b1b6feaad342"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>0087ec15838af6100e72b1b6feaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:11:42</sys_updated_on>
+        <value>ui_action</value>
+        <variable display_value="Action Type">334ea2f153212110248dddeeff7b1255</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>4087ec15838af6100e72b1b6feaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:11:42</sys_updated_on>
+        <value/>
+        <variable display_value="Assert type">7600f16353e0220002c6435723dc34d5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>4487ec15838af6100e72b1b6feaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:11:42</sys_updated_on>
+        <value/>
+        <variable display_value="Declarative Action">51547e3953212110248dddeeff7b126b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>8487ec15838af6100e72b1b6feaad3c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:30:30</sys_updated_on>
+        <value>42da42d00a0a0b340066377beb6dd099</value>
+        <variable display_value="UI action">7c5f6d2353e0220002c6435723dc34f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>8887ec15838af6100e72b1b6feaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:11:42</sys_updated_on>
+        <value>x_1869632_car_pa_0_car_parking_reservation_v2</value>
+        <variable display_value="Table">3eee292353e0220002c6435723dc343c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1ef66c9d838e76100e72b1b6feaad342</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 03:11:42</sys_created_on>
+        <sys_id>c887ec15838af6100e72b1b6feaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 03:11:42</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">535cb5ab53233300f06fddeeff7b1247</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_atf_step_1ef66c9d838e76100e72b1b6feaad342</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><callable_outputs/><copied_from/><description>Click UI action 'Submit' on 'Car Parking Reservation V2' form
+
+Warning: Using assert type '-- None --' may cause unexpected behavior for server UI actions. Avoid potential issues by setting the assert type and using a timeout&#13;
+See the documentation for Test Design Considerations</description><display_name>Click a UI Action</display_name><inputs/><mugshots_cache_json/><notes/><order>6</order><step_config display_value="Click a UI Action">0f4a128297202200abe4bb7503ac4af0</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>1ef66c9d838e76100e72b1b6feaad342</sys_id><sys_mod_count>11</sys_mod_count><sys_name>Click a UI Action</sys_name><sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package><sys_policy/><sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope><sys_update_name>sys_atf_step_1ef66c9d838e76100e72b1b6feaad342</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-26 03:56:31</sys_updated_on><table>x_1869632_car_pa_0_car_parking_reservation_v2</table><test display_value="CPR - Submit Valid Reservation (Happy Path)">2f34a89d834af6100e72b1b6feaad35a</test><timeout>1970-01-01 00:00:05</timeout><warning_message>Warning: Using assert type '-- None --' may cause unexpected behavior for server UI actions. Avoid potential issues by setting the assert type and using a timeout&#13;
+See the documentation for Test Design Considerations</warning_message></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=1ef66c9d838e76100e72b1b6feaad342"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>0087ec15838af6100e72b1b6feaad3c5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:11:42</sys_updated_on><value>ui_action</value><variable display_value="Action Type">334ea2f153212110248dddeeff7b1255</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>500</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>4087ec15838af6100e72b1b6feaad3c4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:11:42</sys_updated_on><value/><variable display_value="Assert type">7600f16353e0220002c6435723dc34d5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>4487ec15838af6100e72b1b6feaad3c5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:11:42</sys_updated_on><value/><variable display_value="Declarative Action">51547e3953212110248dddeeff7b126b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>8487ec15838af6100e72b1b6feaad3c4</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:30:30</sys_updated_on><value>42da42d00a0a0b340066377beb6dd099</value><variable display_value="UI action">7c5f6d2353e0220002c6435723dc34f6</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>8887ec15838af6100e72b1b6feaad3c5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:11:42</sys_updated_on><value>x_1869632_car_pa_0_car_parking_reservation_v2</value><variable display_value="Table">3eee292353e0220002c6435723dc343c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1ef66c9d838e76100e72b1b6feaad342</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 03:11:42</sys_created_on><sys_id>c887ec15838af6100e72b1b6feaad3c4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 03:11:42</sys_updated_on><value>standard_ui</value><variable display_value="Form UI">535cb5ab53233300f06fddeeff7b1247</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>398302449</payload_hash>
+        <record_name>Click a UI Action</record_name>
+        <reverted_from/>
+        <source>24f6de0a83f5b2100e72b1b6feaad37b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 03:56:31</sys_created_on>
+        <sys_id>de5bbd2983c2ba100e72b1b6feaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b58cd0b5e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 03:56:31</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>1e5bbd2939c2ba1077cabec3b2da1471</update_guid>
+        <update_guid_history>1e5bbd2939c2ba1077cabec3b2da1471:398302449,025b7d29b5c2ba10b4db9fc830275ee7:-1088403150,960bf12957c2ba1082e720fea36bb4ba:1719858547,18ba39e5e9c2ba1098cb4085111c6c5f:-1088403150,6639b925a0c2ba1001c0df2a527946b6:398302449,ebcbe01103caf61007b4796c0d8d35eb:1885008048,4487ec15f18af610e99adda6f53b70c9:1848120826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 04:01:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>17bbcffd3a35455ab7370bf3f959fe04</sys_id>
+        <sys_metadata>1ef66c9d838e76100e72b1b6feaad342</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Click a UI Action</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_atf_step_1ef66c9d838e76100e72b1b6feaad342</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_1ef66c9d838e76100e72b1b6feaad342">de5bbd2983c2ba100e72b1b6feaad372</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 04:01:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

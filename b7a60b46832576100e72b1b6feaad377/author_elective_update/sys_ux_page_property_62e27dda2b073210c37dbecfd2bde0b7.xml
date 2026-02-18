@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>sys_ux_applicability sys_id for Workspace audience</description>
+        <name>wbApplicabilityConfigId</name>
+        <page display_value="Car Parking Reservation Portal">2ee27ddae90732106d4cb1d6d1adb2c9</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:17:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>62e27dda2b073210c37dbecfd2bde0b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_update_name>sys_ux_page_property_62e27dda2b073210c37dbecfd2bde0b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:18:00</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1869632_car_pa_0.2ee27ddae90732106d4cb1d6d1adb2c9.root.global.wbApplicabilityConfigId</unique_name>
+        <value>8cf2fdda830732100e72b1b6feaad3d9</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=62e27dda2b073210c37dbecfd2bde0b7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</application>
+        <file_path/>
+        <instance_id>0e9ef6ebdb0e715402022a5913961927</instance_id>
+        <instance_name>dev197703</instance_name>
+        <name>sys_ux_page_property_62e27dda2b073210c37dbecfd2bde0b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>sys_ux_applicability sys_id for Workspace audience</description><name>wbApplicabilityConfigId</name><page display_value="Car Parking Reservation Portal">2ee27ddae90732106d4cb1d6d1adb2c9</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-16 04:17:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>62e27dda2b073210c37dbecfd2bde0b7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>wbApplicabilityConfigId</sys_name><sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package><sys_policy/><sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope><sys_update_name>sys_ux_page_property_62e27dda2b073210c37dbecfd2bde0b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-16 04:18:00</sys_updated_on><type>string</type><unique_name>x_1869632_car_pa_0.2ee27ddae90732106d4cb1d6d1adb2c9.root.global.wbApplicabilityConfigId</unique_name><value>8cf2fdda830732100e72b1b6feaad3d9</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=62e27dda2b073210c37dbecfd2bde0b7"/></record_update>]]></payload>
+        <payload_hash>-427862160</payload_hash>
+        <record_name>wbApplicabilityConfigId</record_name>
+        <reverted_from/>
+        <source>24f6de0a83f5b2100e72b1b6feaad37b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:18:00</sys_created_on>
+        <sys_id>8cf2311e830732100e72b1b6feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c64ab67e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:18:00</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>88f2311e3707321028d99dddc8d9ee31</update_guid>
+        <update_guid_history>88f2311e3707321028d99dddc8d9ee31:-427862160,0cf2311e2e073210831a1e3ee831312e:1712836033</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-16 04:23:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>501debaf1d5b4272872d8f62bf7bf404</sys_id>
+        <sys_metadata>62e27dda2b073210c37dbecfd2bde0b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Car Parking Reservation" source="x_1869632_car_pa_0">b7a60b46832576100e72b1b6feaad377</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Car Parking Reservation">b7a60b46832576100e72b1b6feaad377</sys_scope>
+        <sys_scope_delete display_value="">383e809c2f814e80a129285a31071000</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_62e27dda2b073210c37dbecfd2bde0b7</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_62e27dda2b073210c37dbecfd2bde0b7">8cf2311e830732100e72b1b6feaad332</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-16 04:23:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
